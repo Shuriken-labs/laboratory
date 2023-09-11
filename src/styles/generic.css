@@ -1,0 +1,87 @@
+.__shuriken_logo {
+  max-width: 7rem;
+  object-fit: contain;
+}
+
+.__nav_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.__nav_container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border-radius: 20px; */
+  border: 1px solid rgba(255, 255, 255, 0.246);
+  position: relative;
+  z-index: 10;
+  max-height: 110px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.max_screen {
+  max-width: 1200px;
+}
+
+.__btn_white {
+  color: #595a4a !important;
+}
+
+.__height {
+  height: 120px;
+}
+
+.__hold_hands {
+  background: #662d91;
+  background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  font-weight: 700;
+  /* font-size: 6rem; */
+  font-family: "Circe Bold";
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.__become {
+  color: #ffff;
+  /* font-family: "Circe"; */
+  font-weight: 100;
+}
+
+/* .__become {
+  color: transparent;
+  position: relative;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #ffff;
+  -webkit-text-fill-color: transparent;
+} */
+
+.__box_green_highlight {
+  border: 5px solid #595a4a;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+}
+
+.__elevation {
+  box-shadow: 0 8px 32px 0 rgba(77, 77, 77, 0.384);
+}
+
+.__carded0 {
+  background-color: #ffff;
+}
+
+.__carded2 {
+  background-color: #cbff8c;
+}
+
+.__carded1 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
