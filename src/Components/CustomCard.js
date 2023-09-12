@@ -33,7 +33,7 @@ const CustomCard = ({
       {headerContent && (
         <div
           dangerouslySetInnerHTML={{ __html: headerContent }}
-          className=" ml-8 mr-8 text-2xl bg-blue-200 w-21 mt-8 text-left __header_content"
+          className=" ml-8 mr-8 text-2xl w-21 mt-8 text-left __header_content"
         />
       )}
       {bodyContent && (
