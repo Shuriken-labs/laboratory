@@ -8,13 +8,23 @@ import "./styles/generic.css";
 import "./styles/mobile.css";
 import "./styles/buttons.css";
 import { WalletProvider } from "./utils/State";
+import { Web3ReactProvider, useWeb3React } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
+import { InjectedConnector } from "@web3-react/injected-connector";
+import { formatEther } from "@ethersproject/units";
+import { MetaMask } from "@web3-react/metamask";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <WalletProvider>
-      <App />
-    </WalletProvider>
+    <Web3ReactProvider
+      getLibrary={(provider) => new Web3Provider(provider)}
+      connectors={[InjectedConnector]}
+    >
+      <WalletProvider>
+        <App />
+      </WalletProvider>
+    </Web3ReactProvider>
   </React.StrictMode>
 );
 

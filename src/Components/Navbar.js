@@ -4,8 +4,10 @@ import { isDesktop, isMobile } from "../helpers/Responsiveness";
 import shurikenLogo from "../assets/Shuriken Labs-08.png";
 import WalletState from "../utils/State";
 
+console.log(window.ethereum?.selectedAddress);
+
 const Navbar = () => {
-  const { addCustomNetwork, DisconnectWallet, GetAccount } =
+  const { addCustomNetwork, DisconnectWallet, GetAccount, connectWallet } =
     useContext(WalletState);
   return (
     <div className="__nav_box min-w-full fixed max_screen">
@@ -21,7 +23,7 @@ const Navbar = () => {
           <button
             className="btn 
            btn-light btn-sm __btn_white"
-            onClick={GetAccount}
+            onClick={() => connectWallet()}
           >
             connect wallet
           </button>

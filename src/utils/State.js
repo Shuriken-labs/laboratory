@@ -1,17 +1,30 @@
 import React, { createContext, useState } from "react";
-import { useWeb3React } from "@web3-react/core";
 import Web3 from "web3";
+import { Web3ReactProvider, useWeb3React } from "@web3-react/core";
+import { Web3Provider, ExternalProvider } from "@ethersproject/providers";
+import { InjectedConnector } from "@web3-react/injected-connector";
+import { formatEther } from "@ethersproject/units";
+import { ethers } from "ethers";
+// import { MetaMask } from "@web3-react/metamask";
+const externalProvider = new ethers.JsonRpcProvider(
+  "https://gateway.testnet.octopus.network/ottochain/m4k5urt9h33dpbhgsp4lqxemo6naeihz"
+);
 
 const WalletState = createContext();
 export const WalletProvider = ({ children }) => {
-  const { deactivate, account, library } = useWeb3React();
+  const { deactivate, account, library, activate } = useWeb3React();
+
+  const [wallet, setWallet] = useState({
+    walletAddress: "",
+    nativeBalance: "",
+    connected: ""
+  });
+
+  console.log(typeof wallet.nativeBalance);
 
   const addCustomNetwork = async () => {
-    const ethereum = window.ethereum;
-
     try {
-      // Request permission to add the network
-      await ethereum.request({
+      await window.ethereum.request({
         method: "wallet_addEthereumChain",
         params: [
           {
@@ -25,7 +38,9 @@ export const WalletProvider = ({ children }) => {
             rpcUrls: [
               "https://gateway.testnet.octopus.network/ottochain/m4k5urt9h33dpbhgsp4lqxemo6naeihz"
             ], // Replace with your RPC URL
-            blockExplorerUrls: ["https://34.69.4.240:4000/"] // Replace with your block explorer URL
+            blockExplorerUrls: [
+              "https://34.69.4.240:4000/" // Replace with your block explorer URL
+            ]
           }
         ]
       });
@@ -56,14 +71,43 @@ export const WalletProvider = ({ children }) => {
     return deactivate();
   };
 
+  const connectWallet = async () => {
+    try {
+      // Check if MetaMask is installed
+      if (window.ethereum) {
+        // Request permission to connect the wallet
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        // Wallet is connected
+        console.log("Wallet connected:", window.ethereum.selectedAddress);
+        setWallet({
+          ...wallet,
+          walletAddress: window.ethereum.selectedAddress
+        });
+      } else {
+        // MetaMask is not installed or not detected
+        console.log("MetaMask is not installed");
+      }
+    } catch (error) {
+      console.error("Error connecting wallet:", error);
+    }
+  };
+
   const GetAccount = () => {
     console.log(account);
     return account;
   };
 
+  GetAccount();
+
   return (
     <WalletState.Provider
-      value={{ addCustomNetwork, NativeBalance, GetAccount, DisconnectWallet }}
+      value={{
+        addCustomNetwork,
+        NativeBalance,
+        GetAccount,
+        DisconnectWallet,
+        connectWallet
+      }}
     >
       {children}
     </WalletState.Provider>
