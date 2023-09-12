@@ -7,8 +7,13 @@ import WalletState from "../utils/State";
 console.log(window.ethereum?.selectedAddress);
 
 const Navbar = () => {
-  const { addCustomNetwork, DisconnectWallet, GetAccount, connectWallet } =
-    useContext(WalletState);
+  const {
+    addCustomNetwork,
+    DisconnectWallet,
+    GetAccount,
+    connectWallet,
+    wallet
+  } = useContext(WalletState);
   return (
     <div className="__nav_box min-w-full fixed max_screen">
       <div className="__nav_container flex flex-row justify-between p-6 rounded-3xl">
@@ -25,7 +30,12 @@ const Navbar = () => {
            btn-light btn-sm __btn_white"
             onClick={() => connectWallet()}
           >
-            connect wallet
+            {wallet.walletAddress.length > 2
+              ? `${wallet.walletAddress.substr(
+                  0,
+                  8
+                )}...${wallet.walletAddress.substr(-8, 8)}`
+              : "connect wallet"}
           </button>
         </div>
       </div>

@@ -15,7 +15,10 @@ export const WalletProvider = ({ children }) => {
   const { deactivate, account, library, activate } = useWeb3React();
 
   const [wallet, setWallet] = useState({
-    walletAddress: "",
+    walletAddress:
+      window.ethereum && window.ethereum.selectedAddress
+        ? window.ethereum.selectedAddress
+        : "",
     nativeBalance: "",
     connected: ""
   });
@@ -106,7 +109,8 @@ export const WalletProvider = ({ children }) => {
         NativeBalance,
         GetAccount,
         DisconnectWallet,
-        connectWallet
+        connectWallet,
+        wallet
       }}
     >
       {children}

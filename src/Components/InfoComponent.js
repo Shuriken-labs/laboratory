@@ -1,9 +1,12 @@
 import React from "react";
 import CustomCard from "./CustomCard";
 const InfoContent = [
-  { title: "What do we do?", bodyContent: "Some people" },
-  { title: "What do we do?", bodyContent: "Some people" },
-  { title: "What do we do?", bodyContent: "Some people" }
+  {
+    title: "Personalized Learning<br />for Every Level",
+    bodyContent: "Some people"
+  },
+  { title: "Join a<br />Thriving Community", bodyContent: "Some people" },
+  { title: "Get the<br />Mentorship Advantage", bodyContent: "Some people" }
 ];
 
 const InfoComponent = () => {
@@ -13,7 +16,7 @@ const InfoComponent = () => {
         return (
           <CustomCard
             styles={{ display: "flex" }}
-            className={`__carded${_index} h-40 `}
+            className={`__carded${_index} h-96  mb-14`}
             headerContent={details.title}
             bodyContent={details.bodyContent}
           />

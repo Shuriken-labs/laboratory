@@ -1,6 +1,14 @@
 import React from "react";
+import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
+import shuriken_logo from "../assets/Shuriken Labs-09.png";
 
-const CustomCard = ({ styles, headerContent, bodyContent, className }) => {
+const CustomCard = ({
+  styles,
+  headerContent,
+  bodyContent,
+  className,
+  shuriken = "hope"
+}) => {
   return (
     <div
       className={` __elevation ${className} rounded-3xl`}
@@ -12,8 +20,25 @@ const CustomCard = ({ styles, headerContent, bodyContent, className }) => {
         gap: "2px"
       }}
     >
-      {headerContent && <div className="__header_content">{headerContent}</div>}
-      {bodyContent && <div className="__body_content">{bodyContent}</div>}
+      {shuriken && (
+        <div className="__awesome_shuriken h-14  min-w-full flex flex-row pl-5 pr-5 justify-between items-center rounded-2xl ">
+          <img
+            src={shuriken_logo}
+            className=" max-h-6 "
+            alt="shuriken_labs_logo"
+          />
+          <UitArrowCircleUp className=" arr h-auto rotate-45" />
+        </div>
+      )}
+      {headerContent && (
+        <div
+          dangerouslySetInnerHTML={{ __html: headerContent }}
+          className=" ml-8 mr-8 text-2xl bg-blue-200 w-21 mt-8 text-left __header_content"
+        />
+      )}
+      {bodyContent && (
+        <div className=" pl-8 pr-8 __body_content">{bodyContent}</div>
+      )}
     </div>
   );
 };
