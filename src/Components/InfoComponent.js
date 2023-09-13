@@ -3,10 +3,10 @@ import CustomCard from "./CustomCard";
 const InfoContent = [
   {
     title: "Personalized Learning<br />for Every Level",
-    bodyContent: "Some people"
+    bodyContent: ""
   },
-  { title: "Join a<br />Thriving Community", bodyContent: "Some people" },
-  { title: "Get the<br />Mentorship Advantage", bodyContent: "Some people" }
+  { title: "Join a<br />Thriving Community", bodyContent: "" },
+  { title: "Get the<br />Mentorship Advantage", bodyContent: "" }
 ];
 
 const InfoComponent = () => {

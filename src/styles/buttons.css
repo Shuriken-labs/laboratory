@@ -64,6 +64,19 @@ a {
   color: white !important;
 }
 
+.black:before {
+  background-color: #000000 !important;
+  color: black !important;
+}
+.black:after {
+  background-color: #000000 !important;
+}
+
+.black {
+  color: white !important;
+  /* background-color: #000000 !important; */
+}
+
 .theta .btn-primary:hover {
   transform: translate(0.2em, -0.1em);
 }

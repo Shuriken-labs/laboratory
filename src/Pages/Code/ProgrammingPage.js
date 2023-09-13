@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import programming_img from "../../assets/Snap.png";
 
 const ProgrammingPage = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    const rect = event.target.getBoundingClientRect();
+
+    // Calculate the offset from the center of the container
+    const offsetX = event.clientX - rect.left - rect.width / 2;
+    const offsetY = event.clientY - rect.top - rect.height / 2;
+
+    // Update the mouse position in state
+    setMousePosition({ x: offsetX, y: offsetY });
+  };
+
   return (
     <div className="__programming_page h-screen -mt-40   z-50">
       <div className="__programming_container columns-1 md:columns-2 h-full w-full">
@@ -16,11 +29,20 @@ const ProgrammingPage = () => {
             <div className="__hook_expo_center_container w-full flex justify-center">
               <div className="__hook_expo text-left flex flex-column justify-center w-64 items-center ">
                 <br />
-                Learn JavaScript + web3 <br /> inside out <br />
+                Learn JavaScript + web3 + Solidity <br /> inside out <br />
                 <br />
-                >>>> Become a Fullstack developer with hands-on mentorship.
+                {/* >>>> Become a Fullstack developer with hands-on mentorship. */}
                 <br />
               </div>
+            </div>
+
+            <div className="theta">
+              <button
+                className="btn
+              btn-light btn-sm black max-w-sm text-white"
+              >
+                Shuriken Start
+              </button>
             </div>
           </div>
         </div>

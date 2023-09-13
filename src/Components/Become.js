@@ -10,7 +10,7 @@ const Become = () => {
       <div className="__become columns-2 grid justify-center md:flex md:flex-row md:columns-2 theta rounded-xl md:gap-5">
         <div
           className="btn 
-        btn-light btn-sm __btn_white purple max-w-sm text-white"
+        btn-light btn-sm purple max-w-sm text-white"
           onClick={() => {
             setTimeout(() => {
               navigate("/enquiry/ninja");

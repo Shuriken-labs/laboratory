@@ -1,6 +1,7 @@
 import React from "react";
 import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
 import shuriken_logo from "../assets/Shuriken Labs-09.png";
+import { useNavigate } from "react-router-dom";
 
 const CustomCard = ({
   styles,
@@ -9,6 +10,7 @@ const CustomCard = ({
   className,
   shuriken = "hope"
 }) => {
+  const navigate = useNavigate();
   return (
     <div
       className={` __elevation ${className} rounded-3xl`}
@@ -26,8 +28,9 @@ const CustomCard = ({
             src={shuriken_logo}
             className=" max-h-6 "
             alt="shuriken_labs_logo"
+            onClick={() => navigate("/")}
           />
-          <UitArrowCircleUp className=" arr h-auto rotate-45" />
+          <UitArrowCircleUp className=" arr h-auto  -rotate-180" />
         </div>
       )}
       {headerContent && (
