@@ -54,6 +54,16 @@ a {
   color: #52c11f;
   border-color: #52c11f;
 }
+
+.purple:before {
+  background-color: #662d91 !important;
+  color: white !important;
+}
+
+.purple {
+  color: white !important;
+}
+
 .theta .btn-primary:hover {
   transform: translate(0.2em, -0.1em);
 }

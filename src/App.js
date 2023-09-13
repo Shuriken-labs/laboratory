@@ -13,7 +13,7 @@ function App() {
         <div className="__height"></div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/enquiry/programming" element={<ProgrammingPage />} />
+          <Route path="/enquiry/ninja" element={<ProgrammingPage />} />
         </Routes>
       </BrowserRouter>
     </div>

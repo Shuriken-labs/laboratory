@@ -1,6 +1,7 @@
 import React from "react";
 import InfoComponent from "./InfoComponent";
 import Ninja from "../assets/ninja_girl.png";
+import Become from "./Become";
 
 const Hero = () => {
   return (
@@ -27,11 +28,12 @@ const Hero = () => {
         </div>
       </div>
       <InfoComponent />
+      <Become />
       <br />
       <br />
-      <div className="__second_div min-w-full">
-        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10 md:mt-40">
-          <div className="__first_empty h-96"></div>
+      <div className="__second_div">
+        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10">
+          <div className="__first_empty md:h-96"></div>
           <div className="__second_info __carded1 h-96 rounded-3xl"></div>
         </div>
       </div>
