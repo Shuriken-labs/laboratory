@@ -3,8 +3,9 @@ import { isDesktop, isMobile } from "../helpers/Responsiveness";
 
 import shurikenLogo from "../assets/Shuriken Labs-08.png";
 import WalletState from "../utils/State";
+import { useNavigate } from "react-router-dom";
 
-console.log(window.ethereum?.selectedAddress);
+// console.log(window.ethereum?.selectedAddress);
 
 const Navbar = () => {
   const {
@@ -14,14 +15,18 @@ const Navbar = () => {
     connectWallet,
     wallet
   } = useContext(WalletState);
+  const navigate = useNavigate();
+
   return (
-    <div className="__nav_box min-w-full fixed max_screen">
+    <div className="__nav_box min-w-full fixed max_screen z-20">
       <div className="__nav_container flex flex-row justify-between p-6 rounded-3xl">
         <div className="__logo_container flex">
           <img
             src={shurikenLogo}
             alt="shuriken_logo"
             className="__shuriken_logo"
+            onClick={() => navigate("/")}
+            style={{ cursor: "pointer" }}
           />
         </div>
         <div className="__connect_container theta flex">

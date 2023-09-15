@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import programming_img from "../../assets/Snap.png";
+import programming_img from "../../assets/ninja_threat.png";
+import { readData } from "../../contract/callContracts";
 
 const ProgrammingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,7 +23,7 @@ const ProgrammingPage = () => {
           <div className="__text_container_programming w-full">
             <div className="__hook text-5xl text-left flex flex-row justify-center ">
               Accelerate <br />
-              Your Learning
+              Your web3 Ninja
               <br />
               Journey
             </div>
@@ -38,6 +39,9 @@ const ProgrammingPage = () => {
 
             <div className="theta">
               <button
+                onClick={() => {
+                  readData();
+                }}
                 className="btn
               btn-light btn-sm black max-w-sm text-white"
               >

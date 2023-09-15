@@ -3,6 +3,7 @@ import "./App.css";
 import ScrollTransparentNavbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import ProgrammingPage from "./Pages/Code";
+import TradingPage from "./Pages/Trade";
 function App() {
   return (
     <div className="App ">
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/enquiry/ninja" element={<ProgrammingPage />} />
+          <Route path="/enquiry/trader" element={<TradingPage />} />
         </Routes>
       </BrowserRouter>
     </div>

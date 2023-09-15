@@ -65,16 +65,19 @@ a {
 }
 
 .black:before {
-  background-color: #000000 !important;
+  background-color: #cbff8c !important;
   color: black !important;
 }
-.black:after {
-  background-color: #000000 !important;
+
+.black:hover {
+  color: black !important;
 }
 
 .black {
   color: white !important;
-  /* background-color: #000000 !important; */
+  background-color: black !important;
+  border: unset !important;
+  /* color: #000000 !important; */
 }
 
 .theta .btn-primary:hover {

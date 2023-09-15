@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  /* removes the middle two cards from list */
+
+  .__carded3,
+  .__carded4 {
+    display: none !important;
+  }
+
+  .__carded0 {
+    height: 40rem;
+  }
+}

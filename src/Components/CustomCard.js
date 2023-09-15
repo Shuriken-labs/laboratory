@@ -1,42 +1,42 @@
 import React from "react";
 import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
 import shuriken_logo from "../assets/Shuriken Labs-09.png";
-import { useNavigate } from "react-router-dom";
 
 const CustomCard = ({
   styles,
   headerContent,
   bodyContent,
   className,
-  shuriken = "hope"
+  shuriken = "hope",
+  noImage
 }) => {
-  const navigate = useNavigate();
   return (
     <div
-      className={` __elevation ${className} rounded-3xl`}
+      className={` __elevation ${className} rounded-3xl `}
       style={{
         ...styles,
-        display: "flex",
+        display: noImage ? "hidden" : "flex",
+        boxShadow: noImage && "unset",
         flexDirection: "column",
         alignItems: "center",
         gap: "2px"
       }}
     >
       {shuriken && (
-        <div className="__awesome_shuriken h-14  min-w-full flex flex-row pl-5 pr-5 justify-between items-center rounded-2xl ">
+        <div className="__awesome_shuriken h-14 mt-4  min-w-full flex flex-row pl-5 pr-5 justify-between items-center rounded-2xl">
           <img
             src={shuriken_logo}
-            className=" max-h-6 "
+            className={`max-h-6`}
             alt="shuriken_labs_logo"
-            onClick={() => navigate("/")}
+            style={{ display: noImage ? "none" : "grid" }}
           />
-          <UitArrowCircleUp className=" arr h-auto  -rotate-180" />
+          {/* <UitArrowCircleUp className=" arr h-auto  -rotate-180" /> */}
         </div>
       )}
       {headerContent && (
         <div
           dangerouslySetInnerHTML={{ __html: headerContent }}
-          className=" ml-8 mr-8 text-2xl w-21 mt-8 text-left __header_content"
+          className=" ml-8 mr-8 text-2xl w-21 mt-8 text-left __header_content text-white"
         />
       )}
       {bodyContent && (

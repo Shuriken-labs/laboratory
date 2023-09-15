@@ -7,7 +7,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  z-index: 390;
+  /* z-index: 390; */
 }
 
 .__nav_container {
@@ -74,7 +74,7 @@
 }
 
 .__carded0 {
-  background-color: #ffffff94;
+  /* background-color: #ffffff94; */
   cursor: pointer !important;
   position: relative;
   /* z-index: 10000 !important; */
@@ -84,12 +84,13 @@
   background-color: #ffff;
 }
 
-:is(.__carded0, .__carded1, .__carded2):hover {
+/* :is(.__carded0, .__carded1, .__carded2):hover {
   background-color: #ffff;
-}
+} */
 
 .__carded2 {
   background-color: #cbff8c;
+  background-image: url("../assets/scroll.jpg");
 }
 
 /* .__carded1 {
@@ -135,4 +136,19 @@
   100% {
     transform: translateX(10px) translateY(10px);
   }
+}
+
+.__second_info {
+  position: relative;
+}
+
+.__shuriken_image {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  filter: brightness(22%) blur(10px);
+}
+
+.black__ {
+  background-color: #0000 !important;
 }
