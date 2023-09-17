@@ -54,10 +54,13 @@ const Hero = () => {
               Step into Shuriken Labs{" "}
             </h1>
             "your digital dojo for mastering the art of web3. <br /> <br />
-            As an online academy, we're committed to transforming you into elite
+            {/* As an online academy, we're committed to transforming you into elite
             Fullstack web3 Developers, and astute Crypto/Forex traders. <br />{" "}
             Discover your potential in an environment that's tailored just for
-            you."
+            you." */}
+            In a world filled with tons of Full Stack Developers and Market
+            traders. We are committed to making you ONE with a difference.
+            Unleash your best self in a dojo made just for YOU.
           </div>
         </div>
       </div>
