@@ -23,8 +23,6 @@ export const WalletProvider = ({ children }) => {
     connected: ""
   });
 
-  console.log(typeof wallet.nativeBalance);
-
   const addCustomNetwork = async () => {
     try {
       await window.ethereum.request({
@@ -71,7 +69,16 @@ export const WalletProvider = ({ children }) => {
 
   const DisconnectWallet = () => {
     console.log("disconnecting wallet");
-    return deactivate();
+    // deactivate();
+    window.ethereum.on("disconnect", (error) => {
+      return;
+    });
+    // window.ethereum.disconnect();
+    setWallet((prevWallet) => {
+      return { ...prevWallet, walletAddress: null };
+    });
+    console.log("wallet.waalllet address:");
+    console.log(wallet);
   };
 
   const connectWallet = async () => {
@@ -100,7 +107,7 @@ export const WalletProvider = ({ children }) => {
     return account;
   };
 
-  GetAccount();
+  // GetAccount();
 
   return (
     <WalletState.Provider

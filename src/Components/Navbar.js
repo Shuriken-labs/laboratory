@@ -36,7 +36,9 @@ const Navbar = () => {
           <button
             className="btn 
            btn-light btn-sm __btn_white"
-            onClick={() => connectWallet()}
+            onClick={() => {
+              wallet.walletAddress ? DisconnectWallet() : connectWallet();
+            }}
           >
             {wallet.walletAddress.length > 2
               ? `${wallet.walletAddress.substr(
@@ -46,7 +48,7 @@ const Navbar = () => {
               : "connect wallet"}
           </button>
         </div>
-        <div className="__connect_container theta flex">
+        {/* <div className="__connect_container theta flex">
           <button
             className="btn 
            btn-light btn-sm __btn_white"
@@ -59,7 +61,7 @@ const Navbar = () => {
                 )}...${wallet.walletAddress.substr(-8, 8)}`
               : "wallet Connect"}
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

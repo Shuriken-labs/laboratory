@@ -30,7 +30,7 @@ const Hero = () => {
               className="__naija_image z-30 md:z-50"
               style={{
                 position: "absolute",
-                maxHeight: "200vh"
+                maxHeight: "180vh"
               }}
             />
           </div>
