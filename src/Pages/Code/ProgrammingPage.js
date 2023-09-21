@@ -28,25 +28,30 @@ const ProgrammingPage = () => {
               Journey
             </div>
             <div className="__hook_expo_center_container w-full flex justify-center">
-              <div className="__hook_expo text-left flex flex-column justify-center w-64 items-center ">
-                <br />
-                Learn JavaScript + web3 + Solidity <br /> inside out <br />
-                <br />
-                {/* >>>> Become a Fullstack developer with hands-on mentorship. */}
-                <br />
+              <div className="__hook_expo_center_container w-80 flex justify-center ">
+                <div className="__hook_expo text-left flex flex-column w-full  items-center ">
+                  <br />
+                  Learn JavaScript + web3 + Solidity <br /> inside out <br />
+                  <br />
+                  {/* >>>> Become a Fullstack developer with hands-on mentorship. */}
+                  <br />
+                </div>
               </div>
             </div>
-
-            <div className="theta">
-              <button
-                onClick={() => {
-                  readData();
-                }}
-                className="btn
-              btn-light btn-sm black max-w-sm text-white"
-              >
-                Shuriken Start
-              </button>
+            <div className="__hook_expo_center_container w-full flex justify-center ">
+              <div className="__hook_expo_center_container w-80 flex justify-center ">
+                <div className="theta __be_left">
+                  <button
+                    onClick={() => {
+                      readData();
+                    }}
+                    className="btn
+                btn-light btn-sm black max-w-sm text-white"
+                  >
+                    Shuriken Start
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
