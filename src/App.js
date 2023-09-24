@@ -4,6 +4,7 @@ import ScrollTransparentNavbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import ProgrammingPage from "./Pages/Code";
 import TradingPage from "./Pages/Trade";
+import Enroll from "./Pages/Enroll/Enroll";
 function App() {
   return (
     <div className="App ">
@@ -16,6 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/enquiry/ninja" element={<ProgrammingPage />} />
           <Route path="/enquiry/trader" element={<TradingPage />} />
+          <Route path="/enrollment/successful" element={<Enroll />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

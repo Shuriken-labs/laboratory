@@ -4,7 +4,7 @@ import { isDesktop, isMobile } from "../helpers/Responsiveness";
 import shurikenLogo from "../assets/Shuriken Labs-08.png";
 import WalletState from "../utils/State";
 import { useNavigate } from "react-router-dom";
-import { Web3Button } from "@web3modal/react";
+// import { Web3Button } from "@web3modal/react";
 import { useWeb3Modal } from "@web3modal/react";
 
 // console.log(window.ethereum?.selectedAddress);
