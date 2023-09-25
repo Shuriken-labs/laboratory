@@ -180,8 +180,3 @@
   border: 1px solid rgba(163, 163, 163, 0.69);
   position: relative;
 }
-
-.__enroll_component {
-  background-image: url("../assets/dark-green.jpg");
-  object-fit: fill;
-}
