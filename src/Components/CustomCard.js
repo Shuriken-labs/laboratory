@@ -7,7 +7,7 @@ const CustomCard = ({
   headerContent,
   bodyContent,
   className,
-  shuriken = "hope",
+  shuriken = "yes",
   noImage
 }) => {
   return (
@@ -36,7 +36,7 @@ const CustomCard = ({
       {headerContent && (
         <div
           dangerouslySetInnerHTML={{ __html: headerContent }}
-          className=" ml-8 mr-8 text-2xl w-21 mt-8 text-left __header_content text-white"
+          className=" ml-8 mr-8 text-2xl md:w-72 w-21 mt-8 text-left __header_content text-white"
         />
       )}
       {bodyContent && (
