@@ -73,6 +73,8 @@ export const WalletProvider = ({ children }) => {
     if (typeof window.ethereum !== "undefined") {
       try {
         await window.ethereum.request({ method: "eth_requestAccounts" });
+        window.ethereum.disconnect();
+        console.log(window.ethereum);
         setWallet((prevWallet) => {
           console.log("...", prevWallet);
           prevWallet.walletAddress = "";

@@ -43,7 +43,8 @@
   background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
   font-weight: 700;
   /* font-size: 6rem; */
-  font-family: "Circe Bold";
+  /* font-family: "Circe Bold"; */
+  font-family: "Space Grotesk", sans-serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -55,7 +56,8 @@
 }
 
 .__circe_bold {
-  font-family: "Circe Bold";
+  /* font-family: "Circe Bold"; */
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* .__become {
@@ -109,17 +111,20 @@
 }
 
 .__header_content {
-  font-family: "Circe";
+  /* font-family: "Circe"; */
+  font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
 }
 
 .__hook {
-  font-family: "Circe bold", sans-serif;
+  /* font-family: "Circe bold", sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
   color: "#595A4A";
 }
 
 .__hook_expo {
-  font-family: "Circe", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Circe", sans-serif; */
   color: "#595A4A";
 }
 

@@ -21,11 +21,13 @@ const ProgrammingPage = () => {
       <div className="__programming_container columns-1 md:columns-2 h-full w-full">
         <div className="bg-white __left_programming_container h-full flex flex-column items-center">
           <div className="__text_container_programming w-full">
-            <div className="__hook text-5xl text-left flex flex-row justify-center ">
-              Accelerate <br />
-              Your web3 Ninja
-              <br />
-              Journey
+            <div className="w-full flex flex-row justify-center">
+              <div className="__hook text-5xl w-80 text-left flex flex-row justify-start ">
+                Accelerate <br />
+                Your web3 Ninja
+                <br />
+                Journey
+              </div>
             </div>
             <div className="__hook_expo_center_container w-full flex justify-center">
               <div className="__hook_expo_center_container w-80 flex justify-center ">

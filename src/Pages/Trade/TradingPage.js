@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import programming_img from "../../assets/ninja_trader_real.png";
+import { readData } from "../../contract/callContracts";
 
 const TradingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -20,18 +21,21 @@ const TradingPage = () => {
       <div className="__programming_container columns-1 md:columns-2 h-full w-full">
         <div className="bg-white __left_programming_container h-full flex flex-column items-center">
           <div className="__text_container_programming w-full">
-            <div className="__hook text-5xl text-left w-80 flex flex-row justify-center ">
-              Analyze <br />
-              The Market
-              <br />
-              Like a Pro
+            <div className="w-full flex flex-row justify-center">
+              <div className="__hook text-5xl w-80  text-left flex flex-row justify-start ">
+                Analyze
+                <br />
+                The Market
+                <br />
+                Like a Pro
+              </div>
             </div>
             <div className="__hook_expo_center_container w-full flex justify-center">
               <div className="__hook_expo_center_container w-80 flex justify-center ">
                 <div className="__hook_expo text-left flex flex-column w-full  items-center ">
                   <br />
-                  Coming soon...
-                  <br />
+                  {/* Learn JavaScript + web3 + Solidity <br /> inside out <br /> */}
+                  ...coming soon...
                   <br />
                   {/* >>>> Become a Fullstack developer with hands-on mentorship. */}
                   <br />
@@ -42,6 +46,9 @@ const TradingPage = () => {
               <div className="__hook_expo_center_container w-80 flex justify-center ">
                 <div className="theta __be_left">
                   <button
+                    onClick={() => {
+                      readData();
+                    }}
                     className="btn
                 btn-light btn-sm black max-w-sm text-white"
                   >

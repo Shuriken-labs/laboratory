@@ -49,7 +49,7 @@ const Hero = () => {
               className="__shuriken h-96 rounded-3xl"
             />
           </div>
-          <div className="__second_info __carded1 h-96 rounded-3xl p-10 ">
+          <div className="__second_info __carded1 h-92 md:h-72 rounded-3xl p-10 ">
             <h1 className="__info_header __hook text-3xl">
               Step into Shuriken Labs{" "}
             </h1>

@@ -9,11 +9,12 @@ const imageList = ["", portalImage, slideImage, "", "", scrollImage];
 
 const InfoContent = [
   { title: "", bodyContent: "" },
+
+  { title: "Join a<br />Thriving Community", bodyContent: "" },
   {
     title: "Personalized Learning<br />for Every Level",
     bodyContent: ""
   },
-  { title: "Join a<br />Thriving Community", bodyContent: "" },
   { title: "", bodyContent: "" },
   { title: "", bodyContent: "" },
   { title: "Get the<br />Mentorship Advantage", bodyContent: "" }
