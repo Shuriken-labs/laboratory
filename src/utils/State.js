@@ -67,18 +67,26 @@ export const WalletProvider = ({ children }) => {
     return checkNativeBalance();
   };
 
-  const DisconnectWallet = () => {
+  const DisconnectWallet = async () => {
     console.log("disconnecting wallet");
     // deactivate();
-    window.ethereum.on("disconnect", (error) => {
-      return;
-    });
-    // window.ethereum.disconnect();
-    setWallet((prevWallet) => {
-      return { ...prevWallet, walletAddress: null };
-    });
-    console.log("wallet.waalllet address:");
-    console.log(wallet);
+    if (typeof window.ethereum !== "undefined") {
+      try {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        setWallet((prevWallet) => {
+          console.log("...", prevWallet);
+          prevWallet.walletAddress = "";
+          return { ...prevWallet, walletAddress: "" };
+        });
+        // window.ethereum.disconnect();
+        console.log("wallet.wallet address:");
+        console.log(wallet);
+        // Disconnection was successful
+      } catch (error) {
+        // Handle error or user cancellation
+        console.log(error);
+      }
+    }
   };
 
   const connectWallet = async () => {
