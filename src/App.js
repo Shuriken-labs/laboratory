@@ -5,6 +5,8 @@ import Home from "./Pages/Home";
 import ProgrammingPage from "./Pages/Code";
 import TradingPage from "./Pages/Trade";
 import Enroll from "./Pages/Enroll/Enroll";
+import ScrollToTop from "./utils/ScrollToTop";
+
 function App() {
   return (
     <div className="App ">
@@ -13,6 +15,7 @@ function App() {
         <ScrollTransparentNavbar />
         <div className="noise"></div>
         <div className="__height"></div>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/enquiry/ninja" element={<ProgrammingPage />} />
