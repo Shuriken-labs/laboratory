@@ -15,7 +15,8 @@ const Navbar = () => {
     DisconnectWallet,
     GetAccount,
     connectWallet,
-    wallet
+    wallet,
+    removeCustomNetwork
   } = useContext(WalletState);
   const navigate = useNavigate();
   const { open, close } = useWeb3Modal();

@@ -50,6 +50,19 @@ export const WalletProvider = ({ children }) => {
     }
   };
 
+  const removeCustomNetwork = async () => {
+    try {
+      await window.ethereum.request({
+        method: "wallet_removeEthereumChain",
+        params: [
+          "0x238C" // Replace with the chainId of the network you want to remove
+        ]
+      });
+    } catch (error) {
+      console.error("Error removing network:", error);
+    }
+  };
+
   const NativeBalance = () => {
     const checkNativeBalance = async () => {
       if (library && account) {
@@ -72,9 +85,15 @@ export const WalletProvider = ({ children }) => {
     // deactivate();
     if (typeof window.ethereum !== "undefined") {
       try {
-        await window.ethereum.request({ method: "eth_requestAccounts" });
-        window.ethereum.disconnect();
-        console.log(window.ethereum);
+        // await window.ethereum.request({ method: "eth_requestAccounts" });
+        // window.ethereum.disconnect();
+        // console.log(window.ethereum);
+
+        window.ethereum.on("disconnect", (error) => {
+          // handler code here
+          console.log("error occured");
+        });
+
         setWallet((prevWallet) => {
           console.log("...", prevWallet);
           prevWallet.walletAddress = "";
@@ -127,7 +146,8 @@ export const WalletProvider = ({ children }) => {
         GetAccount,
         DisconnectWallet,
         connectWallet,
-        wallet
+        wallet,
+        removeCustomNetwork
       }}
     >
       {children}
