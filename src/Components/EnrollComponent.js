@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const EnrollComponent = () => {
   const { state } = useLocation();
+  console.log(state);
   const navigate = useNavigate();
   // const { videoUrl, headerComponent, bodyContent, courseOutlineUrl } = state;
   const [isExploding, setIsExploding] = useState(false);
@@ -51,8 +52,10 @@ const EnrollComponent = () => {
           <div className="__enroll_header md:mt-24 text-left text-white text-2xl">
             You've been enrolled
           </div>
-          <div className="__enroll_header">{state?.headerComponent}</div>
-          <div className="__enroll_body">{state?.bodyContent}</div>
+          <div className="__enroll_header text-white">
+            {state?.headerContent}
+          </div>
+          <div className="__enroll_body text-white">{state?.bodyContent}</div>
           <div className="__enroll_download theta  flex justify-start justify-self-start">
             <button className="btn btn-light btn-sm __btn_white justify-self-start">
               Download Outline
@@ -63,13 +66,16 @@ const EnrollComponent = () => {
       </div>
       <div className="mb-40" />
 
-      <div className="whats_next text-center ">what's next?</div>
-      <div className="__glassmorphism_container w-full pl-20 pr-20">
-        <div className=" blobs_glass z-10 w-full rounded-3xl container __glassmorphism h-96"></div>
+      <div className="whats_next text-center text-white">what's next?</div>
+      <div className="__glassmorphism_container bg-red-200  w-full pl-20 pr-20 flex flex-row justify-center items-center">
+        <div className=" blobs_glass z-10 w-[29rem] rounded-3xl container __glassmorphism h-96 ">
+          {" "}
+          <div className="__video_container min-w-full relative">
+            {state?.videoUrl && <video src={state?.videoUrl}></video>}
+          </div>
+        </div>
       </div>
-      <div className="__video_container min-w-full relative">
-        {state?.videoUrl && <video src={state?.videoUrl}></video>}
-      </div>
+
       <div className=" z-0 blobs container flex items-center justify-center min-w-full min-h-full">
         {/* <div className="first_blog w-[10rem] opacity-50 self-center z-0 ">
           {blob1}

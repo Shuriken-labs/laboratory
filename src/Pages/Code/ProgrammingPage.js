@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import programming_img from "../../assets/ninja_threat.png";
 import { readData } from "../../contract/callContracts";
+import { useNavigate } from "react-router-dom";
 
 const ProgrammingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const navigate = useNavigate();
 
   const handleMouseMove = (event) => {
     const rect = event.target.getBoundingClientRect();
@@ -46,6 +48,14 @@ const ProgrammingPage = () => {
                   <button
                     onClick={() => {
                       readData();
+                      navigate("/enrollment/successful", {
+                        state: {
+                          headerContent: "Web3 Ninja",
+                          bodyContent:
+                            "You're going on an exciting journey with us. come on!!",
+                          videoUrl: "https://youtu.be/YVgfHZMFFFQ"
+                        }
+                      });
                     }}
                     className="btn
                 btn-light btn-sm black max-w-sm text-white"
