@@ -67,11 +67,20 @@ const EnrollComponent = () => {
       <div className="mb-40" />
 
       <div className="whats_next text-center text-white">what's next?</div>
-      <div className="__glassmorphism_container bg-red-200  w-full pl-20 pr-20 flex flex-row justify-center items-center">
-        <div className=" blobs_glass z-10 w-[29rem] rounded-3xl container __glassmorphism h-96 ">
+      <div className="__glassmorphism_container  w-full pl-20 pr-20 flex flex-row justify-center items-center">
+        <div className=" blobs_glass z-10 w-[900px] md:w-[100%] md:max-w-[1200px] rounded-3xl container __glassmorphism h-96">
           {" "}
-          <div className="__video_container min-w-full relative">
-            {state?.videoUrl && <video src={state?.videoUrl}></video>}
+          <div className="__video_container min-w-full min-h-full relative">
+            {state?.videoUrl && (
+              <video
+                style={{
+                  display: "flex",
+                  height: "100%",
+                  width: "100%"
+                }}
+                src={state?.videoUrl}
+              ></video>
+            )}
           </div>
         </div>
       </div>
