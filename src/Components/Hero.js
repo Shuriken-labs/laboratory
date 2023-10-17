@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="__hero_box min-w-full flex flex-col">
+    <div className="__hero_box flex flex-col __no_stretch">
       <div className="__hero_container min-w-full md:h-96">
         <div className="__text_container min-w-full">
           <div className="__first_text_container mt-20">

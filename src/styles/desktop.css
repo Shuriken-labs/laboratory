@@ -1,0 +1,23 @@
+/* css media query for desktop screen */
+
+@media (min-width: 1400px) {
+  .__naija_image {
+    max-height: 150vh !important  ;
+  }
+
+  .__no_stretch {
+    max-width: 1600px !important;
+  }
+
+  .__no_stretch_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-height: 1200px) {
+  .__naija_image {
+    max-height: 80vh !important  ;
+  }
+}

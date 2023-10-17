@@ -3,7 +3,7 @@ import Hero from "../../Components/Hero";
 
 const HomePage = () => {
   return (
-    <div className="min-w-full">
+    <div className="min-w-full __no_stretch_container">
       <Hero />
     </div>
   );
