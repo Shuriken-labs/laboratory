@@ -3,9 +3,11 @@ import "./App.css";
 import ScrollTransparentNavbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import ProgrammingPage from "./Pages/Code";
+import About from "./Pages/About";
 import TradingPage from "./Pages/Trade";
 import Enroll from "./Pages/Enroll/Enroll";
 import ScrollToTop from "./utils/ScrollToTop";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/enquiry/ninja" element={<ProgrammingPage />} />
           <Route path="/enquiry/trader" element={<TradingPage />} />
           <Route path="/enrollment/successful" element={<Enroll />} />
+          <Route path="/about" element={<About/>} />
           <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
