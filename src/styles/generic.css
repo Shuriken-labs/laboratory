@@ -1,63 +1,63 @@
 .__shuriken_logo {
-  max-width: 7rem;
-  object-fit: contain;
+	max-width: 7rem;
+	object-fit: contain;
 }
 
 .__nav_box {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  /* z-index: 390; */
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	/* z-index: 390; */
 }
 
 .__nav_container {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  /* border-radius: 20px; */
-  border: 1px solid rgba(255, 255, 255, 0.246);
-  position: relative;
-  z-index: 390;
-  max-height: 110px;
-  margin-top: 10px;
-  width: 90%;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(9px);
+	/* border-radius: 20px; */
+	border: 1px solid rgba(255, 255, 255, 0.246);
+	position: relative;
+	z-index: 390;
+	max-height: 110px;
+	margin-top: 10px;
+	width: 90%;
 }
 
 .max_screen {
-  max-width: 1200px;
+	max-width: 1200px;
 }
 
 .__btn_white {
-  color: #595a4a !important;
+	color: #595a4a !important;
 }
 
 .__height {
-  height: 120px;
+	height: 120px;
 }
 
 .__hold_hands {
-  background: #662d91;
-  background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-  background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-  background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-  font-weight: 700;
-  /* font-size: 6rem; */
-  /* font-family: "Circe Bold"; */
-  font-family: "Space Grotesk", sans-serif;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: #662d91;
+	background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+	background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+	background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+	font-weight: 700;
+	/* font-size: 6rem; */
+	/* font-family: "Circe Bold"; */
+	font-family: "Space Grotesk", sans-serif;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .__become {
-  color: #ffff;
-  /* font-family: "Circe"; */
-  font-weight: 100;
+	color: #ffff;
+	/* font-family: "Circe"; */
+	font-weight: 100;
 }
 
 .__circe_bold {
-  /* font-family: "Circe Bold"; */
-  font-family: "Space Grotesk", sans-serif;
+	/* font-family: "Circe Bold"; */
+	font-family: "Space Grotesk", sans-serif;
 }
 
 /* .__become {
@@ -69,25 +69,25 @@
 } */
 
 .__box_green_highlight {
-  border: 5px solid #595a4a;
-  position: absolute;
-  min-height: 100%;
-  width: 100%;
+	border: 5px solid #595a4a;
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
 }
 
 .__elevation {
-  box-shadow: 0 8px 32px 0 rgba(77, 77, 77, 0.384);
+	box-shadow: 0 8px 32px 0 rgba(77, 77, 77, 0.384);
 }
 
 .__carded0 {
-  /* background-color: #ffffff94; */
-  cursor: pointer !important;
-  position: relative;
-  /* z-index: 10000 !important; */
+	/* background-color: #ffffff94; */
+	cursor: pointer !important;
+	position: relative;
+	/* z-index: 10000 !important; */
 }
 
 .__carded1 {
-  background-color: #ffff;
+	background-color: #ffff;
 }
 
 /* :is(.__carded0, .__carded1, .__carded2):hover {
@@ -95,8 +95,8 @@
 } */
 
 .__carded2 {
-  background-color: #cbff8c;
-  background-image: url("../assets/scroll.jpg");
+	background-color: #cbff8c;
+	background-image: url("../assets/scroll.jpg");
 }
 
 /* .__carded1 {
@@ -107,83 +107,120 @@
 } */
 
 .__carded1 .arr {
-  color: white;
+	color: white;
 }
 
 .__header_content {
-  /* font-family: "Circe"; */
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: bold;
+	/* font-family: "Circe"; */
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: bold;
 }
 
 .__hook {
-  /* font-family: "Circe bold", sans-serif; */
-  font-family: "Space Grotesk", sans-serif;
-  color: "#595A4A";
+	/* font-family: "Circe bold", sans-serif; */
+	font-family: "Space Grotesk", sans-serif;
+	color: "#595A4A";
 }
 
 .__hook_expo {
-  font-family: "Space Grotesk", sans-serif;
-  /* font-family: "Circe", sans-serif; */
-  color: "#595A4A";
+	font-family: "Space Grotesk", sans-serif;
+	/* font-family: "Circe", sans-serif; */
+	color: "#595A4A";
 }
 
 .__right_programming_container {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .__right_programming_container img {
-  transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
 }
 
 .__right_programming_container:hover img {
-  animation: transformer 0.3s ease-in-out forwards;
+	animation: transformer 0.3s ease-in-out forwards;
 }
 
 @keyframes transformer {
-  100% {
-    transform: translateX(10px) translateY(10px);
-  }
+	100% {
+		transform: translateX(10px) translateY(10px);
+	}
 }
 
 .__second_info {
-  position: relative;
+	position: relative;
 }
 
 .__shuriken_image {
-  object-fit: cover;
-  position: absolute;
-  height: 100%;
-  filter: brightness(22%) blur(10px);
+	object-fit: cover;
+	position: absolute;
+	height: 100%;
+	filter: brightness(22%) blur(10px);
 }
 
 .black__ {
-  background-color: #0000 !important;
+	background-color: #0000 !important;
 }
 
 .__be_left {
-  display: flex !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
-  width: 100%;
+	display: flex !important;
+	justify-content: flex-start !important;
+	align-items: flex-start !important;
+	width: 100%;
 }
 
 .__be_left * {
-  display: flex;
+	display: flex;
 }
 
 .__glassmorphism {
-  /* From https://css.glass */
-  /* background: rgba(163, 163, 163, 0.2); */
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	/* From https://css.glass */
+	/* background: rgba(163, 163, 163, 0.2); */
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(163, 163, 163, 0.69);
-  position: relative;
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(163, 163, 163, 0.69);
+	position: relative;
+}
+@font-face {
+	font-family: Irish Grover;
+	src: url(../../public/IrishGrover-Regular.ttf);
+}
+
+._irish {
+	font-family: Irish Grover;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(../../public/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+._montserrat {
+	font-family: Montserrat;
+}
+.__ninja_border_design {
+	border-width: 1px;
+	border-style: solid;
+	border-image: linear-gradient(to right, #ffe500, #5a0069) 1;
+}
+.__shuriken_labs {
+	background: #ffe500;
+	background: linear-gradient(to right, #ffe500 23%, #5a0069 84%);
+	background: -webkit-linear-gradient(to right, #ffe500 23%, #5a0069 84%);
+	background: -moz-linear-gradient(to right, #ffe500 23%, #5a0069 84%);
+	font-weight: 700;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.__ninja_background_design {
+	background: #010618;
+}
+.__about_footer {
+	background-image: url(../assets/Vector\ 1.png);
+	height: 70vh;
 }
 
 .__gradient_new {
