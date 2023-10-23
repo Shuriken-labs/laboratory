@@ -16,7 +16,7 @@ const CustomCard = ({
       style={{
         ...styles,
         display: noImage ? "hidden" : "flex",
-        border: noImage ? "unset" : "2px solid rgba(255, 255, 255, 0.746)",
+        border: noImage ? "unset" : "2px solid rgba(255, 255, 255, 0.646)",
         boxShadow: noImage && "unset",
         flexDirection: "column",
         alignItems: "center",

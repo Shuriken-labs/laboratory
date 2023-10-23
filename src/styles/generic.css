@@ -185,3 +185,10 @@
   border: 1px solid rgba(163, 163, 163, 0.69);
   position: relative;
 }
+
+.__gradient_new {
+  background: #cbff8c;
+  background: linear-gradient(to right, #cbff8c 13%, #5a0069 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

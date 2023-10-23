@@ -4,6 +4,7 @@ import Ninja from "../assets/ninja_girl.png";
 import Become from "./Become";
 import shurikenImage from "../assets/ninja_tab.png";
 import Typewriter from "typewriter-effect";
+import OttochainLogo from "../assets/ottochain-logo.svg";
 
 const Hero = () => {
   return (
@@ -40,16 +41,16 @@ const Hero = () => {
       <Become />
       <br />
       <br />
-      <div className="__second_div">
-        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10 bg-black black__">
-          <div className="__first_empty  mb-10  md:h-96 flex flex-row justify-center items-center">
+      <div className="__second_div ">
+        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10 bg-black black__ flex flex-row justify-center items-center">
+          <div className="__first_empty  mb-10  md:h-96 flex flex-row justify-center items-center ">
             <img
               src={shurikenImage}
               alt="shuriken image"
               className="__shuriken h-96 rounded-3xl"
             />
           </div>
-          <div className="__second_info __carded1 h-92 md:h-72 rounded-3xl p-10 ">
+          <div className="__second_info __carded1 h-92 md:h-72 rounded-3xl p-10 max-w-2xl">
             <h1 className="__info_header __hook text-3xl">
               Step into Shuriken Labs{" "}
             </h1>
@@ -65,10 +66,23 @@ const Hero = () => {
         </div>
       </div>
       <br />
-      <div className=" text-lg" style={{ color: "white", fontFamily: "Circe" }}>
+      <div
+        className=" text-lg "
+        style={{
+          color: "white",
+          fontFamily: "Circe",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <div style={{}}>
+          <img style={{ width: "40px", height: "40px" }} src={OttochainLogo} />
+        </div>
         <Typewriter
           options={{
-            strings: ["Powered by Ottochain", "Built for You"],
+            strings: ["Powered by Ottochain ", "Built for You"],
             autoStart: true,
             loop: true
           }}
