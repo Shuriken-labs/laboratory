@@ -5,8 +5,10 @@ import Become from "./Become";
 import shurikenImage from "../assets/ninja_tab.png";
 import Typewriter from "typewriter-effect";
 import OttochainLogo from "../assets/ottochain-logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="__hero_box flex flex-col __no_stretch">
       <div className="__hero_container min-w-full md:h-96">
@@ -42,7 +44,7 @@ const Hero = () => {
       <br />
       <br />
       <div className="__second_div ">
-        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10 bg-black black__ flex flex-row justify-center items-center">
+        <div className="__second_container columns-1 md:columns-2 pr-10 pl-10 bg-black black__ flex md:flex-row flex-col justify-center items-center">
           <div className="__first_empty  mb-10  md:h-96 flex flex-row justify-center items-center ">
             <img
               src={shurikenImage}
@@ -54,7 +56,7 @@ const Hero = () => {
             <h1 className="__info_header __hook text-3xl">
               Step into Shuriken Labs{" "}
             </h1>
-            "your digital dojo for mastering the art of web3. <br /> <br />
+            "your digital dojo for mastering the art of web3." <br /> <br />
             {/* As an online academy, we're committed to transforming you into elite
             Fullstack web3 Developers, and astute Crypto/Forex traders. <br />{" "}
             Discover your potential in an environment that's tailored just for
@@ -62,6 +64,19 @@ const Hero = () => {
             In a world filled with tons of Full Stack Developers and Market
             traders. We are committed to making you ONE with a difference.
             Unleash your best self in a dojo made just for YOU.
+            <div className="theta mt-3">
+              <div
+                className="btn 
+        btn-light btn-sm black max-w-sm  w-72  text-white font-bold "
+                onClick={() => {
+                  setTimeout(() => {
+                    navigate("/about");
+                  }, 250);
+                }}
+              >
+                Meet the Sensei
+              </div>
+            </div>
           </div>
         </div>
       </div>
