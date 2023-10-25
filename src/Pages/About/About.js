@@ -16,6 +16,8 @@ import Partner7 from "../../assets/Vortex logo.png";
 import Partner8 from "../../assets/S monogram ( for sale ).png";
 import Partner9 from "../../assets/LOGO FOR SELL 1.png";
 import Partner10 from "../../assets/Stock Photo and Image Portfolio by Daram Dudidam _ Shutterstock.png";
+import deverseLabs from "../../assets/deverse.png";
+import Ottochain from "../../assets/ottochain-logo.svg";
 
 const About = () => {
   return (
@@ -176,19 +178,24 @@ const About = () => {
         <div className="grid grid-cols-5 items-center justify-center gap-3 mt-[2rem] px-8 md:px-[13rem]">
           <div className="">
             <img
-              src={Partner3}
-              alt=""
-              className="h-[4rem] md:h-[7rem] md:w-[7rem]"
+              src={Ottochain}
+              alt="ottochain_logo"
+              className="h-[3rem]  md:h-[5rem]"
             />
           </div>
-          <div className="">
-            <img
-              src={Partner5}
-              alt=""
-              className="h-[4rem] md:h-[7rem] md:w-[7rem]"
-            />
+          <div className="deverse_labs">
+            <img src={deverseLabs} alt="" className="w-[4rem]  md:w-[7rem]" />
           </div>
-          <div className="">
+          <div className="ottochain_logo">
+            <img src={Ottochain} alt="" className="h-[3rem]  md:h-[5rem]" />
+          </div>
+          <div className="deverse_labs">
+            <img src={deverseLabs} alt="" className="w-[4rem]  md:w-[7rem]" />
+          </div>
+          <div className="ottochain_logo">
+            <img src={Ottochain} alt="" className="h-[3rem]  md:h-[5rem]" />
+          </div>
+          {/* <div className="">
             <img
               src={Partner10}
               alt=""
@@ -243,7 +250,7 @@ const About = () => {
               alt=""
               className="h-[4rem] md:h-[7rem] md:w-[7rem]"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="md:mt-[7rem] mt-[4rem] __about_footer ">
