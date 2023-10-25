@@ -14,6 +14,11 @@ body {
   width: 100vw;
   position: relative;
   background-color: rgb(8, 7, 7);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1em; /* adjust as needed */
 }
 
 code {
