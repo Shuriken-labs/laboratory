@@ -133,7 +133,7 @@
   overflow: hidden;
 }
 
-.__right_programming_container img {
+/* .__right_programming_container img {
   transition: transform 0.3s ease-out;
 }
 
@@ -145,7 +145,7 @@
   100% {
     transform: translateX(10px) translateY(10px);
   }
-}
+} */
 
 .__second_info {
   position: relative;
