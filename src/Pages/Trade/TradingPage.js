@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import programming_img from "../../assets/ninja_trader_real.png";
 import { readData } from "../../contract/callContracts";
+import Atropos from "atropos/react";
 
 const TradingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -60,12 +61,20 @@ const TradingPage = () => {
           </div>
         </div>
         <div className="  __right_programming_container h-full flex flex-col justify-center items-center">
-          <img
-            src={programming_img}
-            className=""
-            alt="programming_image"
-            style={{ maxHeight: "80%" }}
-          />
+          <Atropos
+            activeOffset={40}
+            shadowScale={1.05}
+            onEnter={() => console.log("Enter")}
+            onLeave={() => console.log("Leave")}
+            onRotate={(x, y) => console.log("Rotate", x, y)}
+          >
+            <img
+              src={programming_img}
+              className=""
+              alt="programming_image"
+              style={{ maxHeight: "80%" }}
+            />
+          </Atropos>
         </div>
       </div>
     </div>

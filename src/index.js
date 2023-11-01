@@ -23,6 +23,7 @@ import { Web3Modal } from "@web3modal/react";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import { arbitrum, mainnet, polygon } from "wagmi/chains";
 import ottochain from "./ottochain";
+import "atropos/css";
 
 const chains = [ottochain];
 const projectId = process.env.REACT_APP_WALLET_CONNECT_ID;
