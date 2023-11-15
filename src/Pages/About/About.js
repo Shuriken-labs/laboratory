@@ -8,6 +8,7 @@ import SeventhNinja from '../../assets/download (5-1).png';
 import EighthNinja from '../../assets/Mr You.png';
 import deverseLabs from '../../assets/deverse.png';
 import Ottochain from '../../assets/ottochain-logo.svg';
+import MobileCaro from './Mobile-Carosel-Effect/MobileCaro';
 
 const About = () => {
 	return (
@@ -17,18 +18,23 @@ const About = () => {
 					<h1 className="__shuriken_labs _irish text-5xl md:text-6xl">SHURIKEN LABS?</h1>
 					<p className="text-white _montserrat">What we are all about</p>
 				</div>
-				<div className="md:flex items-center justify-center gap-7 md:m-0 mt-[6rem]">
-					<div className="__ninja_border_design w-[17rem] md:w-[9.3rem] md:mx-0 mx-auto">
-						<img src={SecondNinja} alt="" className=" mx-[3rem] md:mx-0 md:h-[17rem] md:w-[9rem]" />
+				<div>
+					<div className="md:flex items-center justify-center gap-7 md:m-0 mt-[6rem] hidden">
+						<div className="__ninja_border_design w-[17rem] md:w-[9.3rem] md:mx-0 mx-auto">
+							<img src={SecondNinja} alt="" className=" mx-[3rem] md:mx-0 md:h-[17rem] md:w-[9rem]" />
+						</div>
+						<div className="__ninja_border_design mt-[12rem]">
+							<img src={ForthNinja} alt="" className="h-[17rem] w-[9rem] " />
+						</div>
+						<div className="__ninja_border_design">
+							<img src={FirstNinja} alt="" className="h-[17rem] w-[9rem]" />
+						</div>
+						<div className="__ninja_border_design mt-[12rem]  ">
+							<img src={ThirdNinja} alt="" className="h-[17rem] w-[9rem]" />
+						</div>
 					</div>
-					<div className="__ninja_border_design mt-[12rem] hidden md:flex">
-						<img src={ForthNinja} alt="" className="h-[17rem] w-[9rem] " />
-					</div>
-					<div className="__ninja_border_design hidden md:flex">
-						<img src={FirstNinja} alt="" className="h-[17rem] w-[9rem]" />
-					</div>
-					<div className="__ninja_border_design mt-[12rem] hidden md:flex">
-						<img src={ThirdNinja} alt="" className="h-[17rem] w-[9rem]" />
+					<div className='md:hidden'>
+						<MobileCaro/>
 					</div>
 				</div>
 			</div>
