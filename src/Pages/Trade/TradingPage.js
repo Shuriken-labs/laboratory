@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import programming_img from "../../assets/ninja_trader_real.png";
 import { readData } from "../../contract/callContracts";
 import Atropos from "atropos/react";
-
+ 
 const TradingPage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
