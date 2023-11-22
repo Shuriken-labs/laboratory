@@ -5,7 +5,7 @@ import "../styles/buttons.css";
 const Become = () => {
   const navigate = useNavigate();
   return (
-    <div className="__become w-full columns-1 md:columns-2 h-32 z-10">
+    <div className="__become  md:columns-2 h-32 z-10">
       <div className=" hidden md:grid h-full rounded-xl"></div>
       <div className="__become columns-2 grid justify-center md:flex md:flex-row md:columns-2 theta rounded-xl md:gap-5 md:mr-10">
         <div

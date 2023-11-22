@@ -1,63 +1,65 @@
 .__shuriken_logo {
-	max-width: 7rem;
-	object-fit: contain;
+  max-width: 7rem;
+  object-fit: contain;
 }
 
 .__nav_box {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	/* z-index: 390; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* z-index: 390; */
 }
 
 .__nav_container {
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(9px);
-	-webkit-backdrop-filter: blur(9px);
-	/* border-radius: 20px; */
-	border: 1px solid rgba(255, 255, 255, 0.246);
-	position: relative;
-	z-index: 390;
-	max-height: 110px;
-	margin-top: 10px;
-	width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border-radius: 20px; */
+  border: 1px solid rgba(255, 255, 255, 0.246);
+  position: relative;
+  z-index: 390;
+  max-height: 110px;
+  margin-top: 10px;
+  width: 90%;
 }
 
 .max_screen {
-	max-width: 1200px;
+  max-width: 1200px;
 }
 
 .__btn_white {
-	color: #595a4a !important;
+  color: #595a4a !important;
 }
 
 .__height {
-	height: 120px;
+  height: 120px;
 }
 
 .__hold_hands {
-	background: #662d91;
-	background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-	background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-	background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-	font-weight: 700;
-	/* font-size: 6rem; */
-	/* font-family: "Circe Bold"; */
-	font-family: "Space Grotesk", sans-serif;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: #662d91;
+  background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  font-weight: 700;
+  /* font-size: 6rem; */
+  /* font-family: "Circe Bold"; */
+  font-family: "Space Grotesk", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.__become {
-	color: #ffff;
-	/* font-family: "Circe"; */
-	font-weight: 100;
-}
+/* .__become {
+  color: #ffff;
+ 
+  font-weight: 100;
+  width: 100% !important;
+  columns: 1 !important;
+} */
 
 .__circe_bold {
-	/* font-family: "Circe Bold"; */
-	font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Circe Bold"; */
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /* .__become {
@@ -69,25 +71,25 @@
 } */
 
 .__box_green_highlight {
-	border: 5px solid #595a4a;
-	position: absolute;
-	min-height: 100%;
-	width: 100%;
+  border: 5px solid #595a4a;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
 }
 
 .__elevation {
-	box-shadow: 0 8px 32px 0 rgba(77, 77, 77, 0.384);
+  box-shadow: 0 8px 32px 0 rgba(77, 77, 77, 0.384);
 }
 
 .__carded0 {
-	/* background-color: #ffffff94; */
-	cursor: pointer !important;
-	position: relative;
-	/* z-index: 10000 !important; */
+  /* background-color: #ffffff94; */
+  cursor: pointer !important;
+  position: relative;
+  /* z-index: 10000 !important; */
 }
 
 .__carded1 {
-	background-color: #ffff;
+  background-color: #ffff;
 }
 
 /* :is(.__carded0, .__carded1, .__carded2):hover {
@@ -95,8 +97,8 @@
 } */
 
 .__carded2 {
-	background-color: #cbff8c;
-	background-image: url("../assets/scroll.jpg");
+  background-color: #cbff8c;
+  background-image: url("../assets/scroll.jpg");
 }
 
 /* .__carded1 {
@@ -107,30 +109,41 @@
 } */
 
 .__carded1 .arr {
-	color: white;
+  color: white;
 }
 
 .__header_content {
-	/* font-family: "Circe"; */
-	font-family: "Space Grotesk", sans-serif;
-	font-weight: bold;
+  /* font-family: "Circe"; */
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+}
+
+.__font_space {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .__hook {
-	/* font-family: "Circe bold", sans-serif; */
-	font-family: "Space Grotesk", sans-serif;
-	color: "#595A4A";
+  /* font-family: "Circe bold", sans-serif; */
+  font-family: "Space Grotesk", sans-serif;
+  color: "#595A4A";
 }
 
 .__hook_expo {
-	font-family: "Space Grotesk", sans-serif;
-	/* font-family: "Circe", sans-serif; */
-	color: "#595A4A";
+  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Circe", sans-serif; */
+  color: "#595A4A";
 }
 
 .__right_programming_container {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.__black_button {
+  background-color: #010618 !important;
+}
+.__black_button:before {
+  background-color: unset !important;
 }
 
 /* .__right_programming_container img {
@@ -148,42 +161,42 @@
 } */
 
 .__second_info {
-	position: relative;
+  position: relative;
 }
 
 .__shuriken_image {
-	object-fit: cover;
-	position: absolute;
-	height: 100%;
-	filter: brightness(22%) blur(10px);
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  filter: brightness(22%) blur(10px);
 }
 
 .black__ {
-	background-color: #0000 !important;
+  background-color: #0000 !important;
 }
 
 .__be_left {
-	display: flex !important;
-	justify-content: flex-start !important;
-	align-items: flex-start !important;
-	width: 100%;
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  width: 100%;
 }
 
 .__be_left * {
-	display: flex;
+  display: flex;
 }
 
 .__glassmorphism {
-	/* From https://css.glass */
-	/* background: rgba(163, 163, 163, 0.2); */
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* From https://css.glass */
+  /* background: rgba(163, 163, 163, 0.2); */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
-	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	border: 1px solid rgba(163, 163, 163, 0.69);
-	position: relative;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(163, 163, 163, 0.69);
+  position: relative;
 }
 /* @font-face {
 	font-family: Irish Grover;
@@ -191,74 +204,92 @@
 } */
 
 ._irish {
-	/* font-family: Irish Grover; */
-	font-family: "Space Grotesk", sans-serif;
+  /* font-family: Irish Grover; */
+  font-family: "Space Grotesk", sans-serif;
 }
 @font-face {
-	font-family: Montserrat;
-	src: url(../../public/Montserrat-Italic-VariableFont_wght.ttf);
+  font-family: Montserrat;
+  src: url(../../public/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
 ._montserrat {
-	font-family: Montserrat;
+  font-family: Montserrat;
 }
 .__ninja_border_design {
-	border-width: 1px;
-	border-style: solid;
-	border-image: linear-gradient(to right, #ffe500, #5a0069) 1;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ffe500, #5a0069) 1;
 }
 .__shuriken_labs {
-	background: #662d91;
-	background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-	background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
-	background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: #662d91;
+  background: -webkit-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: -moz-linear-gradient(to right, #662d91 0%, #cbff8c 84%);
+  background: linear-gradient(to right, #662d91 0%, #cbff8c 84%);
 
-	font-weight: 700;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .__ninja_background_design {
-	background: #010618;
+  background: #010618;
 }
 .__about_footer {
-	background-image: url(../assets/Vector\ 1.png);
-	height: 70vh;
+  background-image: url(../assets/Vector\ 1.png);
+  height: 70vh;
 }
 
 .__gradient_new {
-	background: #cbff8c;
-	background: linear-gradient(to right, #cbff8c 13%, #5a0069 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: #cbff8c;
+  background: linear-gradient(to right, #cbff8c 13%, #5a0069 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .__courses_bg_image {
-		@apply h-[45vh] md:w-[50%] w-[90%] text-center mx-auto rounded-2xl;
-	box-shadow: 0 0 10px 0 #cbff8c;
+  @apply h-[45vh] md:w-[50%] w-[90%] text-center mx-auto rounded-2xl;
+  box-shadow: 0 0 10px 0 #cbff8c;
 }
 .__courses_card1 {
-	background: linear-gradient(31.32deg, #ffe500 -93.03%, #5a0069 98.43%);
+  background: linear-gradient(31.32deg, #ffe500 -93.03%, #5a0069 98.43%);
 }
 .__courses_card2 {
-	background: linear-gradient(34.97deg, #0c33c4 -27.89%, #ff7a00 115.82%);
+  background: linear-gradient(34.97deg, #0c33c4 -27.89%, #ff7a00 115.82%);
 }
 .__courses_card3 {
-  background: linear-gradient(40.79deg, #03091F -1.74%, #FFFFFF 103.59%);
+  background: linear-gradient(40.79deg, #03091f -1.74%, #ffffff 103.59%);
   @apply h-[11rem] relative;
 }
 .__courses_card4 {
   background: linear-gradient(21.4deg, #028134 -8.31%, #150069 106.83%);
   @apply relative;
 }
-.__course_background_design{
+.__course_background_design {
   background: #1e1e1e;
   @apply md:h-[18rem] h-[18rem] w-[14rem] md:w-[14rem] md:mx-0 mx-auto my-7 md:my-0 p-4;
-  }
-.__courses_footer{
+}
+.__courses_footer {
   background: #ffe500;
   @apply h-[12vh] w-[100%] mt-12;
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
 }
-.__overall{
-  background: linear-gradient(rgba(206, 139, 139, 0.384),rgba(174, 103, 103, 0.384)) ;
+.__overall {
+  background: linear-gradient(
+    rgba(206, 139, 139, 0.384),
+    rgba(174, 103, 103, 0.384)
+  );
+}
+
+.__create_import_wallet_container {
+  display: flex;
+  position: absolute;
+  width: 85vw;
+  height: 100vh;
+  /* max-width: 500px; */
+  max-height: 500px;
+  top: 50%;
+  /* bottom: -50%; */
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 90;
+  background-color: aliceblue;
 }
