@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 // import { Web3Button } from "@web3modal/react";
 import { useWeb3Modal } from "@web3modal/react";
 import CustomModal from "./CustomModal";
+import ImportWallet from "./wallets/ImportWallet";
 
 // console.log(window.ethereum?.selectedAddress);
 
@@ -81,7 +82,8 @@ const Navbar = () => {
       </div>
       {buttonVisible && (
         <div className="__create_import_wallet_container __elevation rounded-3xl">
-          <CustomModal />
+          {/* <CustomModal /> */}
+          <ImportWallet />
         </div>
       )}
     </div>

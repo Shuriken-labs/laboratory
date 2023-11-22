@@ -3,15 +3,9 @@ import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
 import shuriken_logo from "../assets/Shuriken Labs-09.png";
 import Atropos from "atropos/react";
 
-const headerContents = `
-  <div className="text-black text-xl">
-    looks like you're on a mobile device
-  </div>
-`;
-
-const CustomModal = ({
+const CreateWallet = ({
   styles,
-  headerContent = headerContents,
+  headerContent,
   bodyContent,
   className,
   shuriken = "yes",
@@ -59,7 +53,7 @@ const CustomModal = ({
 
       <br />
       <br />
-      <div className="__action_buttons pl-8 pr-8 w-full flex justify-between">
+      <div className="__action_buttons pl-4 pr-4 w-full flex justify-between">
         <div className="theta ">
           <button
             onClick={() => {}}
@@ -73,7 +67,7 @@ const CustomModal = ({
         <div className="theta">
           <div
             className="btn 
-        btn-dark btn-sm max-w-sm __small_font text-white"
+        btn-dark btn-sm max-w-sm __small_font  text-white"
           >
             Create wallet
           </div>
@@ -83,4 +77,4 @@ const CustomModal = ({
   );
 };
 
-export default CustomModal;
+export default CreateWallet;

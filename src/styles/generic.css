@@ -293,3 +293,7 @@
   z-index: 90;
   background-color: aliceblue;
 }
+
+.__small_font {
+  font-size: small !important;
+}
