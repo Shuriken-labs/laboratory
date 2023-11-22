@@ -67,17 +67,17 @@ const ImportWallet = ({
       <br />
 
       <div className="__action_buttons pl-4 pr-4 w-full flex justify-end">
-        <div className="theta">
+        <div className="__back_button flex flex-row justify-center items-center mr-6">
           <div
-            className="btn 
-        btn-dark btn-sm max-w-sm __small_font  text-white"
+            className=" text-center  "
             onClick={() => {
               onButtonClick("connect");
             }}
           >
-            back
+            {"< connect wallet"}
           </div>
         </div>
+
         <div className="theta ">
           <button
             onClick={() => {}}
@@ -88,6 +88,7 @@ const ImportWallet = ({
           </button>
         </div>
       </div>
+      <br />
       <br />
     </div>
   );
