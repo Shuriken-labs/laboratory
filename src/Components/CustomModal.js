@@ -15,7 +15,8 @@ const CustomModal = ({
   bodyContent,
   className,
   shuriken = "yes",
-  noImage
+  noImage,
+  onButtonClick
 }) => {
   return (
     <div
@@ -62,7 +63,9 @@ const CustomModal = ({
       <div className="__action_buttons pl-8 pr-8 w-full flex justify-between">
         <div className="theta ">
           <button
-            onClick={() => {}}
+            onClick={() => {
+              onButtonClick("import");
+            }}
             className="btn
                 btn-black btn-sm __small_font max-w-sm text-white"
           >
@@ -74,6 +77,9 @@ const CustomModal = ({
           <div
             className="btn 
         btn-dark btn-sm max-w-sm __small_font text-white"
+            onClick={() => {
+              onButtonClick("create");
+            }}
           >
             Create wallet
           </div>

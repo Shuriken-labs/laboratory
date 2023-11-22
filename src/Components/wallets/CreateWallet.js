@@ -1,6 +1,6 @@
 import React from "react";
 import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
-import shuriken_logo from "../assets/Shuriken Labs-09.png";
+import shuriken_logo from "../../assets/Shuriken Labs-09.png";
 import Atropos from "atropos/react";
 
 const CreateWallet = ({

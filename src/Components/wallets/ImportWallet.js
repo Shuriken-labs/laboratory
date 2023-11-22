@@ -9,7 +9,8 @@ const ImportWallet = ({
   bodyContent,
   className,
   shuriken = "yes",
-  noImage
+  noImage,
+  onButtonClick
 }) => {
   return (
     <div
@@ -66,6 +67,17 @@ const ImportWallet = ({
       <br />
 
       <div className="__action_buttons pl-4 pr-4 w-full flex justify-end">
+        <div className="theta">
+          <div
+            className="btn 
+        btn-dark btn-sm max-w-sm __small_font  text-white"
+            onClick={() => {
+              onButtonClick("connect");
+            }}
+          >
+            back
+          </div>
+        </div>
         <div className="theta ">
           <button
             onClick={() => {}}
@@ -75,15 +87,6 @@ const ImportWallet = ({
             Import wallet
           </button>
         </div>
-
-        {/* <div className="theta">
-          <div
-            className="btn 
-        btn-dark btn-sm max-w-sm __small_font  text-white"
-          >
-            Create wallet
-          </div>
-        </div> */}
       </div>
       <br />
     </div>

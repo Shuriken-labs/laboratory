@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useWeb3Modal } from "@web3modal/react";
 import CustomModal from "./CustomModal";
 import ImportWallet from "./wallets/ImportWallet";
+import CreateWallet from "./wallets/CreateWallet";
 
 // console.log(window.ethereum?.selectedAddress);
 
@@ -25,6 +26,27 @@ const Navbar = () => {
   const userAgent = navigator.userAgent;
   const isMobileBrowser = /Mobi|Android/i.test(userAgent);
   const [buttonVisible, setButtonVisible] = useState(false);
+  const [page, setPage] = useState("connect");
+  const nextPage = (page) => {
+    setPage(page);
+  };
+
+  const nextPageNumber = (pageNumber) => {
+    switch (pageNumber) {
+      case "1":
+        setPage("connect");
+        break;
+      case "2":
+        setPage("import");
+        break;
+      case "3":
+        setPage("create");
+        break;
+
+      default:
+        setPage("1");
+    }
+  };
 
   function mobileFunction() {
     // Code specific to mobile browser
@@ -82,8 +104,13 @@ const Navbar = () => {
       </div>
       {buttonVisible && (
         <div className="__create_import_wallet_container __elevation rounded-3xl">
-          {/* <CustomModal /> */}
-          <ImportWallet />
+          {page == "import" ? (
+            <ImportWallet onButtonClick={nextPage} />
+          ) : page == "connect" ? (
+            <CustomModal onButtonClick={nextPage} />
+          ) : (
+            <CreateWallet onButtonClick={nextPage} />
+          )}
         </div>
       )}
     </div>
