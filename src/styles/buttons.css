@@ -1,266 +1,266 @@
 @import "https://assets.loupbrun.ca/fonts/booster/stylesheet.css";
 body {
-	font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
-	line-height: 1.42;
-	padding: 0;
-	margin: 0;
+  font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+  line-height: 1.42;
+  padding: 0;
+  margin: 0;
 }
 
 button,
 a {
-	outline: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .theta .btn {
-	display: inline-block;
-	margin: 6px;
-	font-size: inherit;
-	line-height: 1.42;
-	padding: 0.7em 1.4em;
-	font-weight: normal;
-	border-width: 3px;
-	border-style: solid;
-	background: transparent;
-	border-radius: 0;
-	cursor: pointer;
-	font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
-	user-select: none;
-	vertical-align: bottom;
-	position: relative;
-	transform: translate(0.5em -0.4em);
-	transition: transform 0.2s;
+  display: inline-block;
+  margin: 6px;
+  font-size: inherit;
+  line-height: 1.42;
+  padding: 0.7em 1.4em;
+  font-weight: normal;
+  border-width: 3px;
+  border-style: solid;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  position: relative;
+  transform: translate(0.5em -0.4em);
+  transition: transform 0.2s;
 }
 .theta .btn.btn-disabled {
-	cursor: not-allowed;
-	opacity: 0.8;
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 .theta .btn.btn-disabled:active {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 .theta .btn:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	transform: translate(0.6em, -0.3em);
-	transition: transform 0.2s, background-color 0.2s;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translate(0.6em, -0.3em);
+  transition: transform 0.2s, background-color 0.2s;
 }
 .theta .btn-primary {
-	color: #52c11f;
-	border-color: #52c11f;
+  color: #52c11f;
+  border-color: #52c11f;
 }
 
 .purple:before {
-	background-color: #662d91 !important;
-	color: white !important;
+  background-color: #662d91 !important;
+  color: white !important;
 }
 
 .purple {
-	color: white !important;
+  color: white !important;
 }
 
 .black:before {
-	background-color: #cbff8c !important;
-	color: black !important;
+  background-color: #cbff8c !important;
+  color: black !important;
 }
 
 .black:hover {
-	color: black !important;
+  color: black !important;
 }
 
 .black {
-	color: white !important;
-	background-color: black !important;
-	border: unset !important;
-	/* color: #000000 !important; */
+  color: white !important;
+  background-color: black !important;
+  border: unset !important;
+  /* color: #000000 !important; */
 }
 
 .theta .btn-primary:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-primary:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-primary:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-primary:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(31, 193, 142, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(31, 193, 142, 0.5);
 }
 .theta .btn-primary:before {
-	background-color: rgba(31, 193, 142, 0.4);
+  background-color: rgba(31, 193, 142, 0.4);
 }
 .theta .btn-secondary {
-	color: #0b44ef;
-	border-color: #0b44ef;
+  color: #0b44ef;
+  border-color: #0b44ef;
 }
 .theta .btn-secondary:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-secondary:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-secondary:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-secondary:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(182, 11, 239, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(182, 11, 239, 0.5);
 }
 .theta .btn-secondary:before {
-	background-color: rgba(182, 11, 239, 0.4);
+  background-color: rgba(182, 11, 239, 0.4);
 }
 .theta .btn-tertiary {
-	color: #ff006a;
-	border-color: #ff006a;
+  color: #ff006a;
+  border-color: #ff006a;
 }
 .theta .btn-tertiary:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-tertiary:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-tertiary:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-tertiary:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(255, 149, 0, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(255, 149, 0, 0.5);
 }
 .theta .btn-tertiary:before {
-	background-color: rgba(255, 149, 0, 0.4);
+  background-color: rgba(255, 149, 0, 0.4);
 }
 .theta .btn-tetrary {
-	color: #991be2;
-	border-color: #991be2;
+  color: #991be2;
+  border-color: #991be2;
 }
 .theta .btn-tetrary:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-tetrary:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-tetrary:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-tetrary:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(226, 27, 100, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(226, 27, 100, 0.5);
 }
 .theta .btn-tetrary:before {
-	background-color: rgba(226, 27, 100, 0.4);
+  background-color: rgba(226, 27, 100, 0.4);
 }
 .theta .btn-black {
-	color: #252730;
-	border-color: #252730;
+  color: #252730;
+  border-color: #252730;
 }
 .theta .btn-black:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-black:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-black:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-black:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(46, 37, 48, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(46, 37, 48, 0.5);
 }
 .theta .btn-black:before {
-	background-color: rgba(46, 37, 48, 0.4);
+  background-color: rgba(46, 37, 48, 0.4);
 }
 .theta .btn-dark {
-	color: #3f4351;
-	border-color: #3f4351;
+  color: #e5e7ee;
+  border-color: #3f4351;
 }
 .theta .btn-dark:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-dark:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-dark:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-dark:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(77, 63, 81, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgb(0, 0, 0);
 }
 .theta .btn-dark:before {
-	background-color: rgba(77, 63, 81, 0.4);
+  background-color: rgb(0, 0, 0);
 }
 .theta .btn-gray {
-	color: #6d6f7f;
-	border-color: #6d6f7f;
+  color: #6d6f7f;
+  border-color: #6d6f7f;
 }
 .theta .btn-gray:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-gray:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-gray:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-gray:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: rgba(125, 109, 127, 0.5);
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(125, 109, 127, 0.5);
 }
 .theta .btn-gray:before {
-	background-color: rgba(125, 109, 127, 0.4);
+  background-color: rgba(125, 109, 127, 0.4);
 }
 .theta .btn-light {
-	color: #cbff8c;
-	border-color: #e6eaef;
+  color: #cbff8c;
+  border-color: #e6eaef;
 }
 .theta .btn-light:hover {
-	transform: translate(0.2em, -0.1em);
+  transform: translate(0.2em, -0.1em);
 }
 .theta .btn-light:hover:before {
-	transform: translate(-0.4em, 0.4em);
+  transform: translate(-0.4em, 0.4em);
 }
 .theta .btn-light:active {
-	transform: translate(0, 0);
-	transition-duration: 0.1s;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
 .theta .btn-light:active:before {
-	transition-duration: 0.1s;
-	transform: translate(0, 0);
-	background-color: #cbff8c;
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: #cbff8c;
 }
 .theta .btn-light:before {
-	background-color: #cbff8c;
+  background-color: #cbff8c;
 }
 .__about_send_btn {
-	background: linear-gradient(90deg, #ffe500 -9.37%, #5a0069 109.43%);
-	border-radius: 100%;
+  background: linear-gradient(90deg, #ffe500 -9.37%, #5a0069 109.43%);
+  border-radius: 100%;
 }
 .__courses_button {
-	@apply h-[2rem] w-[9rem] text-sm my-[0.8rem] text-white;
-	cursor: pointer;
-	background: transparent;
-	/* border-radius: 4rem; */
-	border: 1px solid;
-	border-image: linear-gradient(90deg, #ffe500 -9.37%, #5a0069 109.43%) 1;
+  @apply h-[2rem] w-[9rem] text-sm my-[0.8rem] text-white;
+  cursor: pointer;
+  background: transparent;
+  /* border-radius: 4rem; */
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #ffe500 -9.37%, #5a0069 109.43%) 1;
 }
