@@ -102,17 +102,17 @@ const About = () => {
 					<h1 className="__shuriken_labs _irish text-4xl md:text-5xl">Meet the Ninjas</h1>
 				</div>
 				<div className="md:flex items-center justify-center gap-7 mt-[2rem]">
-					<div className="__ninja_background_design p-4 hidden md:block">
-						<img src={FifthNinja} alt="" className="h-[11rem] w-[11rem]" />
+					<div className="__ninja_background_design p-4 md:h-[17rem] h-[23rem] w-[17rem] md:w-[12rem] md:mx-0 mx-auto my-7 md:my-0">
+						<img src={FifthNinja} alt="" className="h-[16.9rem] w-[14rem] md:h-[11rem] md:w-[11rem]" />
 						<div className="mt-3">
-							<h2 className="_irish __shuriken_labs text-2xl">Inspiration</h2>
+							<h2 className="_irish __shuriken_labs md:text-2xl text-3xl">Inspiration</h2>
 							<p className="text-white _montserrat">@inspira_tion001</p>
 						</div>
 					</div>
-					<div className="__ninja_background_design p-4 hidden md:block">
-						<img src={SixthNinja} alt="" className="h-[11rem] w-[11rem] " />
+					<div className="__ninja_background_design p-4 md:h-[17rem] h-[23rem] w-[17rem] md:w-[12rem] md:mx-0 mx-auto my-7 md:my-0">
+						<img src={SixthNinja} alt="" className="h-[16.9rem] w-[17rem] md:h-[11rem] md:w-[11rem]" />
 						<div className="mt-3">
-							<h2 className="_irish __shuriken_labs text-2xl">cyberZeus</h2>
+							<h2 className="_irish __shuriken_labs md:text-2xl text-3xl">cyberZeus</h2>
 							<p className="text-white _montserrat">@cyberZeus</p>
 						</div>
 					</div>
