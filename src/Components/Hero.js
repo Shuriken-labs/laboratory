@@ -17,7 +17,7 @@ const Hero = () => {
             <h1 className="__hold_hands text-4xl md:text-8xl">
               Let's hold your hands,
             </h1>
-            <h2 className="__become text-base md:text-5xl">
+            <h2 className="__become text-base md:text-5xl text-white">
               <Typewriter
                 options={{
                   strings: ["as you become all that you can."],
