@@ -27,7 +27,7 @@ import "atropos/css";
 
 const chains = [ottochain];
 const projectId = process.env.REACT_APP_WALLET_CONNECT_ID;
-console.log(projectId);
+// console.log(projectId);
 
 const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
 const wagmiConfig = createConfig({

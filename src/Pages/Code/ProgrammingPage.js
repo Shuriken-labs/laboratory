@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import programming_img from "../../assets/ninja_threat.png";
-import { readData } from "../../contract/callContracts";
+import { enroll, readData } from "../../contract/callContracts";
 import { useNavigate } from "react-router-dom";
 import Atropos from "atropos/react";
 
@@ -48,15 +48,16 @@ const ProgrammingPage = () => {
                 <div className="theta __be_left">
                   <button
                     onClick={() => {
-                      readData();
-                      navigate("/enrollment/successful", {
-                        state: {
-                          headerContent: "Web3 Ninja",
-                          bodyContent:
-                            "You're going on an exciting journey with us. come on!!",
-                          videoUrl: "https://youtu.be/YVgfHZMFFFQ"
-                        }
-                      });
+                      // readData();
+                      enroll();
+                      // navigate("/enrollment/successful", {
+                      //   state: {
+                      //     headerContent: "Web3 Ninja",
+                      //     bodyContent:
+                      //       "You're going on an exciting journey with us. come on!!",
+                      //     videoUrl: "https://youtu.be/YVgfHZMFFFQ"
+                      //   }
+                      // });
                     }}
                     className="btn
                 btn-light btn-sm black max-w-sm text-white"
@@ -72,9 +73,9 @@ const ProgrammingPage = () => {
           <Atropos
             activeOffset={40}
             shadowScale={1.05}
-            onEnter={() => console.log("Enter")}
-            onLeave={() => console.log("Leave")}
-            onRotate={(x, y) => console.log("Rotate", x, y)}
+            // onEnter={() => console.log("Enter")}
+            // onLeave={() => console.log("Leave")}
+            // onRotate={(x, y) => console.log("Rotate", x, y)}
           >
             <img
               src={programming_img}
