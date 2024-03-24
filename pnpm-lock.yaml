@@ -53,6 +53,9 @@ dependencies:
   atropos:
     specifier: ^2.0.2
     version: 2.0.2
+  browser-crypto:
+    specifier: ^2.1.0
+    version: 2.1.0
   ethers:
     specifier: ^6.7.1
     version: 6.7.1
@@ -65,6 +68,9 @@ dependencies:
   react-confetti-explosion:
     specifier: ^2.1.2
     version: 2.1.2(react-dom@18.2.0)(react@18.2.0)
+  react-copy-to-clipboard:
+    specifier: ^5.1.0
+    version: 5.1.0(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
@@ -5337,6 +5343,10 @@ packages:
 
   /brorand@1.1.0:
     resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
+    dev: false
+
+  /browser-crypto@2.1.0:
+    resolution: {integrity: sha512-tHFEr//O3LR/nnqa5fCI9v1C3F08kyW0+EaWIhJOZZ6UL1MIQg616mWAo64qmRpq7kjifOEimAKRXOM+lllEGA==}
     dev: false
 
   /browser-process-hrtime@1.0.0:
@@ -11220,6 +11230,16 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-jss: 10.10.0(react@18.2.0)
+    dev: false
+
+  /react-copy-to-clipboard@5.1.0(react@18.2.0):
+    resolution: {integrity: sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==}
+    peerDependencies:
+      react: ^15.3.0 || 16 || 17 || 18
+    dependencies:
+      copy-to-clipboard: 3.3.3
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-dev-utils@12.0.1(eslint@8.49.0)(typescript@5.2.2)(webpack@5.88.2):

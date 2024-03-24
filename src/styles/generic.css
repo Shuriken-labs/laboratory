@@ -297,3 +297,7 @@
 .__small_font {
   font-size: small !important;
 }
+
+.__copy_text:hover {
+  color: red;
+}

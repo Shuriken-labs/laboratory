@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState, useLayoutEffect, useContext } from "react";
 import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
 import shuriken_logo from "../../assets/Shuriken Labs-09.png";
 import Atropos from "atropos/react";
+import { createWallet12 } from "../../controllers/wallet";
+import { decrypt } from "../../utils/encryption";
+import WalletState from "../../utils/State";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
+const initWallet = async () => {
+  const walletObject = await createWallet12();
+  console.log("================================================");
+  console.log(walletObject);
+  return walletObject;
+};
 
 const CreateWallet = ({
   styles,
@@ -10,8 +21,25 @@ const CreateWallet = ({
   className,
   shuriken = "yes",
   noImage,
-  onButtonClick
+  onButtonClick,
+  walletDetails
 }) => {
+  console.log("walletDetails");
+  const { wallet, createMobileWallet } = useContext(WalletState);
+  console.log(wallet);
+  // console.log(walletDetails);
+  // const [wallet, setWallet] = useState({
+  //   encrypted_mnemonic: "",
+  //   addresses: {
+  //     evm: ""
+  //   }
+  // });
+  // useEffect(async () => {
+  //   const newWallet = await walletDetails();
+  //   console.log("================================");
+  //   console.log(newWallet);
+  //   setWallet(newWallet);
+  // }, []);
   return (
     <div
       className={` ${className} rounded-3xl `}
@@ -52,8 +80,11 @@ const CreateWallet = ({
         right here!
       </div> */}
 
+      {/* 
+          "thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis" */}
+
       <div className="__import_seed_container rounded-3xl border border-black h-64 w-72 max-w-[65vw] grid justify-items-center grid-cols-2 p-4">
-        {"thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis thiiiiiiiiis"
+        {decrypt(wallet.mobileWallet.encrypted_mnemonic)
           .split(" ")
           .map((e, i) => {
             return (
@@ -63,6 +94,14 @@ const CreateWallet = ({
             );
           })}
       </div>
+      <CopyToClipboard
+        onCopy={console.log("copied")}
+        text={decrypt(wallet.mobileWallet.encrypted_mnemonic)}
+      >
+        <div className=" text-sm __copy_text">
+          click here to copy your seed phrase
+        </div>
+      </CopyToClipboard>
       <br />
 
       <div className="__action_buttons pl-4 pr-4 w-full flex justify-end">

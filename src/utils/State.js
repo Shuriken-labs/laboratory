@@ -5,6 +5,7 @@ import { Web3Provider, ExternalProvider } from "@ethersproject/providers";
 import { InjectedConnector } from "@web3-react/injected-connector";
 import { formatEther } from "@ethersproject/units";
 import { ethers } from "ethers";
+import { createWallet12 } from "../controllers/wallet";
 // import { MetaMask } from "@web3-react/metamask";
 const externalProvider = new ethers.JsonRpcProvider(
   "https://gateway.testnet.octopus.network/ottochain/m4k5urt9h33dpbhgsp4lqxemo6naeihz"
@@ -48,6 +49,15 @@ export const WalletProvider = ({ children }) => {
     } catch (error) {
       console.error("Error adding network:", error);
     }
+  };
+
+  const createMobileWallet = async () => {
+    console.log("creating custom wallet =============");
+    const mobileWallet = await createWallet12();
+    setWallet((prevWallet) => {
+      return { ...prevWallet, mobileWallet };
+    });
+    return mobileWallet;
   };
 
   const removeCustomNetwork = async () => {
@@ -147,7 +157,8 @@ export const WalletProvider = ({ children }) => {
         DisconnectWallet,
         connectWallet,
         wallet,
-        removeCustomNetwork
+        removeCustomNetwork,
+        createMobileWallet
       }}
     >
       {children}

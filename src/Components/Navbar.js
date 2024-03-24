@@ -9,8 +9,10 @@ import { useWeb3Modal } from "@web3modal/react";
 import CustomModal from "./CustomModal";
 import ImportWallet from "./wallets/ImportWallet";
 import CreateWallet from "./wallets/CreateWallet";
+import { createWallet12 } from "../controllers/wallet";
 
 // console.log(window.ethereum?.selectedAddress);
+const createWallet = async () => await createWallet12();
 
 const Navbar = () => {
   const {
@@ -27,6 +29,7 @@ const Navbar = () => {
   const isMobileBrowser = /Mobi|Android/i.test(userAgent);
   const [buttonVisible, setButtonVisible] = useState(false);
   const [page, setPage] = useState("connect");
+
   const nextPage = (page) => {
     setPage(page);
   };

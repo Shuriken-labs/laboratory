@@ -63,18 +63,20 @@ export async function enroll(courseName = "Blockchain FUndamentals") {
   const defaultAccount = await window.ethereum.request({
     method: "eth_requestAccounts"
   });
+  console.log("defaultAccount[0]");
   console.log(defaultAccount[0]);
   const acc = "0x39bbe33acc94147480b6dfffd10de4ebbb2179f0";
 
-  const transactionObject = { from: acc };
+  const transactionObject = { from: acc, gasPrice: web3.utils.toHex(web3.utils.toWei('30', 'gwei')), // Gas price (optional)
+  gasLimit: web3.utils.toHex(300000)  };
 
-  transactionObject.gas = await window.ethereum.request({
-    method: "eth_estimateGas",
-    params: [transactionObject]
-  });
-  transactionObject.gasPrice = await window.ethereum.request({
-    method: "eth_gasPrice"
-  });
+  // transactionObject.gas = await window.ethereum.request({
+  //   method: "eth_estimateGas",
+  //   params: [transactionObject]
+  // });
+  // transactionObject.gasPrice = await window.ethereum.request({
+  //   method: "eth_gasPrice"
+  // });
 
   const receipt = await contract.methods
     .enroll(courseName)

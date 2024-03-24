@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { UitArrowCircleUp } from "@iconscout/react-unicons-thinline";
 import shuriken_logo from "../assets/Shuriken Labs-09.png";
 import Atropos from "atropos/react";
+import { createWallet12 } from "../controllers/wallet";
+import WalletState from "../utils/State";
 
 const headerContents = `
   <div className="text-black text-xl">
@@ -16,8 +18,11 @@ const CustomModal = ({
   className,
   shuriken = "yes",
   noImage,
-  onButtonClick
+  onButtonClick,
+  userWallet
 }) => {
+  const { wallet, createMobileWallet } = useContext(WalletState);
+  const [loading, setLoading] = useState(false);
   return (
     <div
       className={` ${className} rounded-3xl `}
@@ -77,11 +82,13 @@ const CustomModal = ({
           <div
             className="btn 
         btn-dark btn-sm max-w-sm __small_font text-white"
-            onClick={() => {
+            onClick={async () => {
+              setLoading(true);
+              await createMobileWallet();
               onButtonClick("create");
             }}
           >
-            Create wallet
+            {loading ? "loading ..." : "Create wallet"}
           </div>
         </div>
       </div>
