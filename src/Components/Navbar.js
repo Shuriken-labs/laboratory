@@ -4,8 +4,6 @@ import { isDesktop, isMobile } from "../helpers/Responsiveness";
 import shurikenLogo from "../assets/Shuriken Labs-08.png";
 import WalletState from "../utils/State";
 import { useNavigate } from "react-router-dom";
-// import { Web3Button } from "@web3modal/react";
-import { useWeb3Modal } from "@web3modal/react";
 import CustomModal from "./CustomModal";
 import ImportWallet from "./wallets/ImportWallet";
 import CreateWallet from "./wallets/CreateWallet";
@@ -24,7 +22,6 @@ const Navbar = () => {
     removeCustomNetwork
   } = useContext(WalletState);
   const navigate = useNavigate();
-  const { open, close } = useWeb3Modal();
   const userAgent = navigator.userAgent;
   const isMobileBrowser = /Mobi|Android/i.test(userAgent);
   const [buttonVisible, setButtonVisible] = useState(false);

@@ -22,7 +22,7 @@ const TradingPage = () => {
   return (
     <div className="__programming_page h-screen -mt-40   z-50">
       <div className="__programming_container grid md:flex columns-1 md:columns-2 h-full w-full">
-        <div className="bg-white __left_programming_container md:h-full h-[90vh] min-w-[50%] flex flex-column items-center">
+        <div className="bg-white __left_programming_container md:h-full h-[100vh] min-w-[50%] flex flex-column items-center">
           <div className="__text_container_programming w-full">
             <div className="w-full flex flex-row justify-center">
               <div className="__hook text-5xl w-80  text-left flex flex-row justify-start ">

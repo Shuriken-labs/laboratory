@@ -1,19 +1,15 @@
 import React, { createContext, useState } from "react";
-import Web3 from "web3";
-import { Web3ReactProvider, useWeb3React } from "@web3-react/core";
-import { Web3Provider, ExternalProvider } from "@ethersproject/providers";
-import { InjectedConnector } from "@web3-react/injected-connector";
-import { formatEther } from "@ethersproject/units";
+
 import { ethers } from "ethers";
 import { createWallet12 } from "../controllers/wallet";
-// import { MetaMask } from "@web3-react/metamask";
+
 const externalProvider = new ethers.JsonRpcProvider(
   "https://gateway.testnet.octopus.network/ottochain/m4k5urt9h33dpbhgsp4lqxemo6naeihz"
 );
 
 const WalletState = createContext();
 export const WalletProvider = ({ children }) => {
-  const { deactivate, account, library, activate } = useWeb3React();
+
 
   const [wallet, setWallet] = useState({
     walletAddress:
@@ -75,16 +71,16 @@ export const WalletProvider = ({ children }) => {
 
   const NativeBalance = () => {
     const checkNativeBalance = async () => {
-      if (library && account) {
-        const web3 = new Web3(library);
-        const balance = await web3.eth.getBalance(account);
+      // if (library && account) {
+      //   const web3 = new Web3(library);
+      //   const balance = await web3.eth.getBalance(account);
 
-        // Convert balance from wei to ether
-        const balanceInEther = web3.utils.fromWei(balance, "ether");
+      //   // Convert balance from wei to ether
+      //   const balanceInEther = web3.utils.fromWei(balance, "ether");
 
-        console.log(`Native Balance: ${balanceInEther} ETH`);
-        return balanceInEther;
-      }
+      //   console.log(`Native Balance: ${balanceInEther} ETH`);
+      //   return balanceInEther;
+      // }
     };
 
     return checkNativeBalance();
@@ -142,8 +138,8 @@ export const WalletProvider = ({ children }) => {
   };
 
   const GetAccount = () => {
-    console.log(account);
-    return account;
+    // console.log(account);
+    // return account;
   };
 
   // GetAccount();
