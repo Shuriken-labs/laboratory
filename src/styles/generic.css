@@ -268,14 +268,14 @@
 }
 .__courses_footer {
   background: #ffe500;
-  @apply h-[12vh] w-[100%] mt-12;
+  @apply h-[12vh] w-[107%] mt-12;
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
 }
 .__overall {
   background: linear-gradient(
     rgba(206, 139, 139, 0.384),
-    rgba(174, 103, 103, 0.384)
+    rgba(51, 18, 18, 0.384)
   );
 }
 
@@ -300,4 +300,37 @@
 
 .__copy_text:hover {
   color: red;
+}
+.__create_project_upload {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 229, 0, 0.1) -1.37%,
+    rgba(90, 0, 105, 0.1) 109.43%
+  );
+  @apply md:pt-[8rem] pt-[3rem] space-y-3 border border-[#FFE500] rounded-2xl w-[19rem] h-[12rem] md:h-[22rem] md:w-[39rem] mx-auto mt-[4rem];
+}
+.__create_project_title {
+  @apply text-left px-[5rem] pt-[0.5rem] mt-[4rem] w-[100%] h-[3rem];
+  background: linear-gradient(
+    90deg,
+    rgba(255, 239, 99, 0.1) -1.37%,
+    rgba(90, 0, 105, 0.1) 109.43%
+  );
+}
+.__create_project_title > h1 {
+  @apply text-[#FFE500] text-2xl font-bold;
+}
+.__create_project_content {
+  @apply text-left;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 239, 99, 0.1) -1.37%,
+    rgba(90, 0, 105, 0.1) 109.43%
+  );
+}
+.__create_project_footer {
+  background: #ffe500;
+  @apply h-[12vh] w-[100%] mt-12;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
 }
