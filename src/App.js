@@ -8,6 +8,7 @@ import TradingPage from './Pages/Trade';
 import Courses from './Pages/Courses/Courses';
 import Enroll from './Pages/Enroll/Enroll';
 import ScrollToTop from './utils/ScrollToTop';
+import CreateProject from './Pages/Create-Project/CreateProject';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 					<Route path="/enrollment/successful" element={<Enroll />} />
 					<Route path="/courses" element={<Courses />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/upload" element={<CreateProject />} />
 					<Route path="*" element={<Home />} />
 				</Routes>
 			</BrowserRouter>
