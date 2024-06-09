@@ -324,7 +324,7 @@
   @apply text-left;
   background: linear-gradient(
     90deg,
-    rgba(255, 239, 99, 0.1) -1.37%,
+    #5c551a1a
     rgba(90, 0, 105, 0.1) 109.43%
   );
 }
@@ -333,4 +333,49 @@
   @apply h-[12vh] w-[100%] mt-12;
   border-bottom-left-radius: 27px;
   border-bottom-right-radius: 27px;
+}
+.__join_waitlist {
+	@apply bg-black md:w-[70vh] w-[45vh] rounded-xl border-white border-2 border-solid;
+}
+.__join_waitlist_content {
+	@apply md:pt-[2rem] pt-[2rem];
+}
+.__waitlist_form {
+	background-color: transparent;
+	@apply border-white border-2 rounded-md w-[19rem] px-3 py-2 text-white;
+}
+.__waitlist_form::placeholder {
+	@apply  text-[0.9rem];
+}
+.__waitlist_btn {
+	@apply p-[1rem] rounded-full md:w-[15rem] w-[10rem] mr-4 mx-auto md:mx-3 mb-9 md:mb-7;
+	background: white;
+}
+.__close_btn {
+	@apply md:pl-[25rem] pl-[19rem] md:pt-[1rem] pt-[2rem];
+}
+
+body.active-modal {
+	overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+}
+
+.overlay {
+	background: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
